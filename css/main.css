@@ -116,6 +116,17 @@ main {
     margin-top: 99px;
 }
 
+/* ====================== section1 css ========================== */
+.section1 {
+    margin-top: 50px;
+    width: 100%;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+/* ====================== section1 css end ========================== */
+
 @media screen and (max-width: 900px) {
     header > nav > .navBar,
     header > nav > .searchLogin,
