@@ -67,11 +67,6 @@ header>nav>.navBar>ul>li>a {
     color: black;
 }
 
-/* li태그 끝나면 구분선 추가 */
-/* header>nav>.navBar>ul>li::after {
-    content: "|";
-} */
-
 /* ----------searchLogin---------- */
 /* navBar 요소 flex 및 세로정렬 */
 header>nav>.searchLogin {
