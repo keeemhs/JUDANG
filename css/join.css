@@ -1,0 +1,73 @@
+main > * {
+    display: flex;
+    justify-content: center;
+}
+
+/* 로고 div */
+main > .logoDiv {
+    margin-top: 18vh;
+}
+
+/* id,pw div */
+main > .loginIDPW {
+    flex-direction: column;
+    align-items: center;
+    height: 25vh;
+}
+
+/* input 배경 변경 */
+main > .loginIDPW > div > input#id,
+main > .loginIDPW > div > input#pw {
+    background-color: #dddddb;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+main > .loginIDPW > div > input#pwVal {
+    background-color: #dddddb;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+main > .loginIDPW > span.rule {
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+}
+
+main > .loginIDPW > span.pwSame {
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+}
+
+/* --------회원가입 버튼 ---------- */
+/* 로그인 및 회원가입 버튼 마진 */
+main > .btnDiv > * {
+    margin: 10px;
+}
+
+/* 로그인 및 회원가입 버튼 설정 */
+main > .btnDiv > button {
+    background-color: #dddddb;
+    font-size: 23px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    margin-bottom: 5vh;
+    height: 40px;
+}
+
+/* 로그인 및 회원가입 버튼 a태그 설정 */
+main > .btnDiv > button > a {
+    color: black;
+    text-decoration: none;
+}
+
+/* 회원가입 버튼 */
+main > .btnDiv > .joinBtn {
+    width: 105px;
+}

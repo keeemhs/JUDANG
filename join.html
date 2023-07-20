@@ -7,11 +7,11 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/loginPage.css">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/join.css"> <!-- join css 연결 -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script defer src="./js/loginPage.js"></script>
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script defer src="./js/join.js"></script> <!-- join js 연결 -->
 </head>
 
 <body>
@@ -95,10 +95,12 @@
         <div class="loginIDPW">
             <div class="idDiv"><input type="id" id="id" placeholder="아이디" /></div>
             <div class="pwDiv"><input type="password" id="pw" placeholder="비밀번호" /></div>
+            <span class="rule">ㆍ비밀번호: 8~16자의 영문 대/소문자,숫자, 특수문자를 사용해 주세요. </span>
+            <div class="pwValDiv"><input type="password" id="pwVal" placeholder="비밀번호 확인" /></div>
+            <span class="pwSame" style="visibility: hidden;">ㆍ비밀번호가 일치하지 않습니다.</span>
         </div>
         <div class="btnDiv">
-            <button class="loginBtn" type="button">로그인</button>
-            <button class="joinBtn" type="button"><a href="./join.html">회원가입</a></button>
+            <button class="joinBtn" type="button">회원가입</button> <!-- <a href="">회원가입</a> -->
         </div>
     </main>
 
@@ -159,5 +161,4 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
