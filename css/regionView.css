@@ -1,0 +1,393 @@
+/* header */
+body {
+    background-color: #dddddb;
+}
+
+header {
+    width: 100vw;
+    height: 90px;
+    background-color: #dddddb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: 'Makgeolli';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Makgeolli.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header>nav>.imgDiv {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/* nav 요소 flex */
+header>nav {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 98vw;
+    margin: 10px;
+}
+
+/* navBar 요소 flex */
+header>nav>.navBar>ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-evenly;
+}
+
+/* navBar 크기 넓히기*/
+header>nav>.navBar {
+    width: 80vw;
+}
+
+/* li요소 폰트 및 글씨 크기 */
+header>nav>.navBar>ul {
+    font-family: 'Makgeolli';
+    font-size: 30px;
+}
+
+/* li에 a태그 밑줄, 색 변경 */
+header>nav>.navBar>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------searchLogin---------- */
+/* navBar 요소 flex 및 세로정렬 */
+header>nav>.searchLogin {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+/* 검색, 로그인 띄우기 */
+header>nav>.searchLogin>.searchInput {
+    margin-right: 15px;
+    width: 200px;
+}
+
+/* 검색창 크기, 폰트, 테두리, 배경색 변경*/
+header>nav>.searchLogin>.searchInput>input {
+    width: 200px;
+    height: 25px;
+    font-size: 25px;
+    border: none;
+    background-color: #dddddb;
+    border-bottom: 1px solid black;
+    font-family: 'Makgeolli';
+}
+
+/* 포커스 테두리 삭제 */
+header>nav>.searchLogin>.searchInput>input:focus {
+    outline: none;
+}
+
+header>nav>.ham {
+    display: none;
+}
+
+header>nav>.ham>* {
+    background-color: #dddddb !important;
+    font-family: 'Makgeolli' !important;
+    font-size: 30px;
+}
+
+main {
+    margin-top: 99px;
+}
+
+@media screen and (max-width: 900px) {
+
+    header>nav>.navBar,
+    header>nav>.searchLogin,
+    header>nav>.imgDiv {
+        display: none;
+    }
+
+    header>nav .ham {
+        display: inline;
+    }
+
+    header>nav>div.ham>nav {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* ==========================header 끝 =============================== */
+
+/* ============================= main 시작 =========================== */
+
+@font-face {
+    font-family: 'iceSotong-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceSotong-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sec1 {
+    width: 100vw;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    display: table;
+    display: table-cell;
+}
+
+.sec1 > span {
+    font-family: 'iceSotong-Rg', cursive;
+    font-size: 25px;
+    margin: 5px;
+    border: 3px solid #A1CCD1;
+    background-color: #A1CCD1;
+    color: white;
+    border-radius: 10%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.sec2 {
+    width: 100vw;
+    display: flex;
+}
+
+.sec3 {
+    width: 50vw;
+    text-align: center;
+    padding-left: 3vw;
+}
+
+.seoul {
+    padding: 20px;
+    width: 30vw;
+}
+
+.sec2 > .sec4 {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    padding-right: 10vw;
+}
+
+.sec2 > .sec4 > .list {
+    width: 40vw;
+    height: 45vw;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+.sec2 > .sec4 > .list > .alcoholList {
+    width: 100%;
+    height: 20%;
+}
+
+.subimg {
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================== main 끝 =============================== */
+
+/* =============================footer 시작 =========================== */
+footer {
+    background-color: rgb(16, 16, 16);
+    width: 98vw;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;   
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.footer-logo {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.footer-sec1>span {
+    color: gray;
+}
+
+.white {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer-sec-container {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.footer-sec2>span {
+    color: gray;
+}
+
+td {
+    padding: 3px;
+}
+
+td>a {
+    text-decoration-line: none;
+    color: gray;
+}
+
+@media screen and (max-width:1620px) {
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .sec3 {
+        display: block;
+    }
+
+    .sec3>div {
+        width: 100%;
+    }
+
+    .sec4 {
+        display: block;
+        justify-content: center;
+    }
+
+    .sec4>div {
+        width: 100vw;
+        font-size: 30px;
+    }
+
+    .sec4>div>a {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    footer {
+        height: 700px;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .footer-container {
+        display: block;
+        width: 100%;
+    }
+
+    .footer-sec1 {
+        display: block;
+    }
+
+    .footer-sec2 {
+        margin-left: 0;
+    }
+
+    .footer-sec-container {
+        margin-top: 3vh;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .sec4>div {
+        font-size: 22px;
+    }
+
+    .sec4>div>a {
+        font-size: 25px;
+    }
+
+    footer {
+        height: 500px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .sec4>div {
+        font-size: 18px;
+    }
+
+    .sec4>div>a {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 450px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .sec4>div {
+        font-size: 14px;
+    }
+
+    .sec4>div>a {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 350px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .sec4>div {
+        font-size: 12px;
+    }
+
+    .sec4>div>a {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .sec4>div {
+        font-size: 10px;
+    }
+
+    .sec4>div>a {
+        font-size: 8px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+}
+
+/* =====================footer css end===================== */
