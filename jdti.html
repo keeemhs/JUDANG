@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/default.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/jdtiPage.css">
+    <script defer src="./JS/jdtiPageJS.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="imgDiv">
+                <a href="main.html">
+                    <img src="./image/주당로고배경x.png" width="120px" />
+                </a>
+            </div>
+            <div class="navBar">
+                <ul>
+                    <li><a href="./">지역별로 보기</a></li>|
+                    <li><a href="">주류 MBTI</a></li>|
+                    <li>주류 페스티벌</li>
+                </ul>
+            </div>
+            <div class="searchLogin">
+                <div class="searchInput">
+                    <input type="search" placeholder="제품검색 ex) 안동소주" />
+                </div>
+                <div class="login">
+                    <a href="">
+                        <img src="./image/person-circle.svg" width="30px" />
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="ham">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./main.html">
+                            <img src="./image/주당로고배경x.png" width="120px" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <img src="./image/주당로고배경x.png" width="120px" />
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./main.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">지역별로 보기</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">주류 MBTI</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">주류 페스티벌</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="제품검색 ex) 안동소주"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit" style="width: 70px;">검색</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="jdti">
+        <div class="jdtiTestHeader">
+            <div><img src="./image/주당로고배경x.png" class="jdtiLogo"/></div>
+            <div id="jdtiTestHeaderText">
+                <div> JDTI </div>
+                <div> - Ju-Dang - </div>
+                <div> Type-Indicator</div>
+                <br/>
+                <div> 나의 술 취향 </div>
+                <div> 알아보기 </div>
+                <br/>
+                <div><progress value="0" max="100" id="jdtiProgress"></progress></div>
+            </div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage0">
+            <div><span>테스트 시작하기</span></div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage1">
+            <div>좋아하는 도수를 선택해주세요</div>
+            <br/>
+            <div><span>1. 맥주처럼 낮은 도수</span></div>
+            <div><span>2. 와인처럼 중간 도수</span></div>
+            <div><span>3. 도수는 상관 없어요</span></div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage2">
+            <div>달콤한 술을 좋아하시나요?</div>
+            <br/>
+            <div><span>1. 네!</span></div>
+            <div><span>2. 보통이요</span></div>
+            <div><span>3. 아니요</span></div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage3">
+            <div>새콤한 술을 좋아하시나요?</div>
+            <br/>
+            <div><span>1. 네!</span></div>
+            <div><span>2. 보통이요</span></div>
+            <div><span>3. 아니요</span></div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage4">
+            <div>어떤 바디감의 술을 좋아하시나요?</div>
+            <br/>
+            <div><span>1. 걸쭉하고 강한 풍미를 느낄 수 있는 술</span></div>
+            <div><span>2. 무게감이나 맛의 농도가 적당히 있는 술</span></div>
+            <div><span>3. 묽고 가벼운 풍미를 느낄 수 있는 술</span></div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage5">
+            <div>쓴 맛의 강도는 어느 정도가 좋으세요?</div>
+            <br/>
+            <div><span>1. 술은 써야 제 맛! 많이 씁슬했으면 좋겠어요</span></div>
+            <div><span>2. 술을 마신다 정도의 느낌만 낼 수 있으면 좋겠어요</span></div>
+            <div><span>3. 쓰지 않았으면 좋겠어요</span></div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage6">
+            <div>탄산이 있는 술을 좋아하시나요?</div>
+            <br/>
+            <div><span>1. 네!</span></div>
+            <div><span>2. 보통이요</span></div>
+            <div><span>3. 아니요</span></div>
+        </div>
+        <div class="jdtiOption" id="jdtiPage7">
+            <button type="button" onclick="resultAnalysis()">결과보기</button>
+        </div>
+        <div id="jdtiResultLoading">
+            <br/>
+            <div class="jdtiLoadingCircle1"></div>
+            <div class="jdtiLoadingCircle2"></div>
+            <div class="jdtiLoadingCircle3"></div>
+        </div>
+        <div id="jdtiResult">
+            <div> 추천이 완료되었어요 </div>
+            <div> 당신의 JDTI는 </div>
+            <br/><br/><br/>
+            <div id="jdtiResultImg"> <img src="./image/주당로고배경x.png" class="jdtiLogo"/> </div>
+            <div id="jdtiResultName"> 건배사 외치는 개츠비 </div>
+            <div id="jdtiFeature"> 탄산감 있는 깔끔한 술을 좋아하는 당신 </div>
+            <div> 톡톡튀는 샴페인 막걸리로 그대 눈에 치얼쓰~ </div>
+        </div>
+        <br/><br/><br/>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sec1">
+                <img src="./image/주당로고배경.png" class="footer-logo"></img>
+                <br/>
+                <span class="bold"> 주당법인 우리코딩(주) 서울지점</span>
+                <br/>
+                <span> 서울시 마포구 숭문4길 6</span>
+                <br/>
+                <span> 대표 : 홍길동 |   사업자등록번호 : 000-00-00000 |  사업자번호조회 </span>
+                <br/>
+                <span> 통신판매업신고번호:제2021-와부조안-0163호-01816호 </span>
+                <br/>
+                <span> 대표번호 : 000-0000-0000  |  팩스번호 : 00-000-0000</span>
+                <br/> 
+                <span> 메일 : judang@naver.com</span>
+            </div>
+            <div class="footer-sec-container">
+                <div class="footer-sec2">
+                    <span>CS CENTER</span>
+                    <br/>
+                    <span style="color:mediumturquoise ; font-size:20px; font-weight: bold;">070-0000-0000</span>
+                    <br/>
+                    <span>평일 : 10:00 ~ 17:00</span>
+                    <br/>
+                    <span>점심시간 : 12:00 ~ 13:00</span>
+                    <br/>
+                    <span> 토요일 , 일요일 및 공휴일 제외</span>
+                </div>
+                <div class="footer-sec3">
+                    <table>
+                        <span class="white bold">help</span>
+                        <tr>
+                            <td><a href="">1:1문의</a></td>
+                            <td><a href="">주문/배송조회</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">FAQ</a></td>
+                            <td><a href="">환불/입금</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">상품문의</a></td>
+                            <td><a href="">취소/반품/교환</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">고객센터</a></td>
+                            <td><a href="">찜리스트</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
