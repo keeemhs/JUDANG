@@ -1,6 +1,6 @@
 /* header */
 body {
-    background-color: #dddddb;
+    background-color: white;
 }
 
 header {
@@ -195,7 +195,7 @@ main {
 .sec2 > .sec4 > .list {
     width: 40vw;
     height: 45vw;
-    border: 2px solid black;
+    border: 2px solid white;
     background-color: transparent;
 }
 
