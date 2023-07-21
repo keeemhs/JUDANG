@@ -132,190 +132,86 @@ main {
 /* ==========================header 끝 =============================== */
 
 /* =============================footer 시작 =========================== */
-footer {
+footer{
     background-color: rgb(16, 16, 16);
-    width: 98vw;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
+    width:100%;
+    height:300px;
+    display:flex;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 20px;   
+    font-size:14px;
 }
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
+.footer-container{
+    display:flex;
+    justify-content: space-evenly;
+    width:1200px;
+    height:200px;
 }
-
-.footer-logo {
-    width: 100px;
+.footer-logo{
+    width:100px;
+    aspect-ratio:8/5;
     border-radius: 10px;
 }
-
-.footer-sec1>span {
-    color: gray;
+.footer-sec1 > span{
+    color:gray;
 }
-
-.white {
-    color: white;
+.footer-sec-container{
+    display:flex;
+    justify-content: space-evenly;
 }
-
-.bold {
+.footer-sec2-1 > span{
+    color:gray;
+}
+.footer-sec2-2 > span{
+    color:gray;
+}
+.footer-sec2-2{
+    display: none;
+}
+.footer2-center{
+    color:white;
+    font-size:15px;
+}
+.footer2-center-number{
+    color:mediumturquoise ;
+    font-size:20px;
     font-weight: bold;
 }
-
-.footer-sec-container {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
+.footer-sec3-helper{
+    color:white;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
-
-.footer-sec2>span {
-    color: gray;
+td{
+    padding:3px;
 }
-
-td {
-    padding: 3px;
-}
-
-td>a {
+td > a{
     text-decoration-line: none;
-    color: gray;
+    color:gray;
 }
-
-@media screen and (max-width:1620px) {
-    footer {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width:1300px) {
-    footer {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width:1200px) {
-    .sec3 {
-        display: block;
-    }
-
-    .sec3>div {
-        width: 100%;
-    }
-
-    .sec4 {
-        display: block;
-        justify-content: center;
-    }
-
-    .sec4>div {
-        width: 100vw;
-        font-size: 30px;
-    }
-
-    .sec4>div>a {
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    footer {
-        height: 700px;
+@media screen and (max-width:1400px){
+    footer{
+        height:400px;
+        align-items: normal;
+        padding:30px;
         text-align: center;
-        font-size: 27px;
+        font-size:10px;
     }
-
-    .footer-container {
-        display: block;
-        width: 100%;
+    .footer-container{
+        display:block;
+        width:100%;
     }
-
-    .footer-sec1 {
-        display: block;
+    .footer-sec2{
+        margin-left:0;
     }
-
-    .footer-sec2 {
-        margin-left: 0;
+    .footer-sec2-1{
+        display:none;
     }
-
-    .footer-sec-container {
-        margin-top: 3vh;
-        width: 100%;
+    .footer-sec2-2{
+        display:block;
+    }
+    .footer-sec-container{
+        width:100%;
     }
 }
-
-@media screen and (max-width:800px) {
-    .sec4>div {
-        font-size: 22px;
-    }
-
-    .sec4>div>a {
-        font-size: 25px;
-    }
-
-    footer {
-        height: 500px;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .sec4>div {
-        font-size: 18px;
-    }
-
-    .sec4>div>a {
-        font-size: 20px;
-    }
-
-    footer {
-        height: 450px;
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width:480px) {
-    .sec4>div {
-        font-size: 14px;
-    }
-
-    .sec4>div>a {
-        font-size: 15px;
-    }
-
-    footer {
-        height: 350px;
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width:370px) {
-    .sec4>div {
-        font-size: 12px;
-    }
-
-    .sec4>div>a {
-        font-size: 12px;
-    }
-
-    footer {
-        font-size: 11px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .sec4>div {
-        font-size: 10px;
-    }
-
-    .sec4>div>a {
-        font-size: 8px;
-    }
-
-    footer {
-        font-size: 8px;
-    }
-}
-
 /* =====================footer css end===================== */

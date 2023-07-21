@@ -401,7 +401,7 @@ li>.sec4-goods-review{
 footer{
     background-color: rgb(16, 16, 16);
     width:100%;
-    height:390px;
+    height:300px;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
@@ -459,6 +459,7 @@ td > a{
     .sec3{
         display:block;
         height:auto;
+        margin-top: 40px;
     }
     .sec3 > div{
         display: block;
@@ -474,35 +475,83 @@ td > a{
         height:auto;
         float:none;
     }
-    .sec4{
-        display:block;
-        justify-content: center;
+    .sec4-container{
+        width: 100%;
+        height: 600px;
+        align-items:center;
+        flex-direction: column;
     }
-    .sec4 > div{
-        width:100vw;
-        font-size:30px;
+    .sec4-container > div{
+        padding:40px 20px;
+        width:100%;
     }
-    .sec4 > div > a{
-        font-size:30px;
-        font-weight: 500;
+    .sec4-container > div > ul{
+        width:100%;
+    }
+    .sec4-container > div > ul > li{
+        width:100%;
+        position:relative;
+        height:160px;
+    }
+    .sec4-container > div > h3 > a{
+        right:0px;
+    }
+    .sec4-goods-name{
+        width:100%;
+    }
+    .sec4-goods-review{
+        width:100%;
+    }
+    li>.sec4-goods-name{
+        width:100%;
+    }
+    li>.sec4-goods-review{
+        width:100%;
+    }
+    .sec4-with-img{
+        width:100%;
+    }
+    .sec4-with-img>.sec4-goods-name{
+        width:80%;
+    }
+    .sec4-with-img>.sec4-goods-review{
+        width:80%;
+    }
+    .sec4-img{
+        position:absolute;
+        right:0px;
+    }
+    .sec4-container > div > a{
+        font-size:14px;
+        width:100%;
+    }
+    .sec4-container-1{
+        margin: 40px 0px;
+    }
+    .sec4-container-2{
+        margin: 80px 0px;
     }
     footer{
-        height:700px;
+        height:400px;
+        align-items: normal;
+        padding:30px;
         text-align: center;
-        font-size:27px;
+        font-size:10px;
     }
     .footer-container{
         display:block;
         width:100%;
     }
-    .footer-sec1{
-        display:block;
-    }
     .footer-sec2{
         margin-left:0;
     }
+    .footer-sec2-1{
+        display:none;
+    }
+    .footer-sec2-2{
+        display:block;
+    }
     .footer-sec-container{
-        margin-top:3vh;
         width:100%;
     }
 }
