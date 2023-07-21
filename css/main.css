@@ -142,8 +142,8 @@ video {
 /* ------------------------section-2---------------------------------------- */
 /* section2 css 파일 */
 
-sec-2{
-    background-color: #dddddb;
+.sec-2{
+    margin-top: 30px;
 }
 .section2_Wapper {
     display: flex;
