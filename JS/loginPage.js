@@ -14,6 +14,6 @@ loginBtn.on("click", function () {
         return false;
     }
     else {
-        location.href = "main.html";
+        location.href = "index.html";
     }
 });
