@@ -150,10 +150,9 @@ main {
 
 .sec1 {
     width: 100vw;
-    height: 80px;
+    height: 120px;
     text-align: center;
     vertical-align: middle;
-    display: table;
     display: table-cell;
 }
 
@@ -209,25 +208,14 @@ main {
     height: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
     main > .sec1 {
-        width: 100vw;
-        height: 100px;
-        text-align: center;
-        vertical-align: middle;
-        display: table;
-        display: table-cell;
+        word-break: keep-all;
     }
     .sec1 > span {
-        font-family: 'iceSotong-Rg', cursive;
         font-size: 15px;
-        margin: 5px;
-        border: 3px solid #A1CCD1;
-        background-color: #A1CCD1;
-        color: white;
-        border-radius: 10%;
         padding: 4px;
-        cursor: pointer;
+        display: inline-block;
     }
     .sec2 {
         width: 100vw;
