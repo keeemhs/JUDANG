@@ -140,6 +140,14 @@ main {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'YeongdeokBlueroad';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/YeongdeokBlueroad.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    background-color: white;
+}
+
 .sec1 {
     width: 100vw;
     height: 80px;
@@ -150,7 +158,7 @@ main {
 }
 
 .sec1 > span {
-    font-family: 'iceSotong-Rg', cursive;
+    font-family: 'YeongdeokBlueroad', 'iceSotong-Rg', cursive;
     font-size: 25px;
     margin: 5px;
     border: 3px solid #A1CCD1;
@@ -199,6 +207,46 @@ main {
 .subimg {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    main > .sec1 {
+        width: 100vw;
+        height: 100px;
+        text-align: center;
+        vertical-align: middle;
+        display: table;
+        display: table-cell;
+    }
+    .sec1 > span {
+        font-family: 'iceSotong-Rg', cursive;
+        font-size: 15px;
+        margin: 5px;
+        border: 3px solid #A1CCD1;
+        background-color: #A1CCD1;
+        color: white;
+        border-radius: 10%;
+        padding: 4px;
+        cursor: pointer;
+    }
+    .sec2 {
+        width: 100vw;
+        display: block;
+    }
+    .seoul {
+        padding: 20px;
+        width: 50vw;
+    }
+    .sec3 {
+        width: 100vw;
+        text-align: center;
+        padding-left: 0;
+    }
+    .sec2 > .sec4 {
+        width: 100vw;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 /* ========================== main 끝 =============================== */

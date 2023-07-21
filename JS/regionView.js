@@ -175,3 +175,33 @@ function clickJeju() {
     a.style.backgroundColor="#756e7c"
     a.style.border="3px solid #756e7c"
 }
+
+function clickList1() {
+    let a = document.getElementById("list1").src
+    document.getElementById("alcohollist").src = a;
+    console.log(a);
+}
+
+function clickList2() {
+    let a = document.getElementById("list2").src
+    document.getElementById("alcohollist").src = a;
+    console.log(a);
+}
+
+function clickList3() {
+    let a = document.getElementById("list3").src
+    document.getElementById("alcohollist").src = a;
+    console.log(a);
+}
+
+function clickList4() {
+    let a = document.getElementById("list4").src
+    document.getElementById("alcohollist").src = a;
+    console.log(a);
+}
+
+function clickList5() {
+    let a = document.getElementById("list5").src
+    document.getElementById("alcohollist").src = a;
+    console.log(a);
+}
