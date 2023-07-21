@@ -1,0 +1,118 @@
+@font-face { /* 막걸리폰트 */
+    font-family: 'Makgeolli';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/Makgeolli.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* 영덕블루로드 폰트 */
+    font-family: 'YeongdeokBlueroad';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/YeongdeokBlueroad.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main * , body{
+    background-color: white;
+}
+
+/* 모든 글씨체 */
+main * {
+    font-family: "YeongdeokBlueroad";
+}
+
+/* 공지사항 div 설정 */
+main > div.noticeDiv {
+    width: 65vw;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5vh;
+    padding-top: 10px;
+}
+
+/* 공지사항 글씨 */
+main > div.noticeDiv > .noticeTitle {
+    font-family: 'Makgeolli';
+    font-size: 50px;
+}
+
+/* 공지사항 제목 "사과향이 ~~~" */
+main > div.noticeDiv > div.title {
+    font-size: 25px;
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 0px;
+    margin-top: 3vh;
+}
+
+/* 서브타이틀, 작성자 날짜 조회수 */
+main > div.noticeDiv > div.subTitle {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-color: rgb(0, 0, 0, .5);
+    border-style: solid;
+    border-width: 0 0 1px 0;
+}
+
+/* 이미지 크기 고정 */
+main > div.noticeDiv img {
+    max-width: 100%;
+}
+
+/* 마지막 주당 드림 글씨 */
+main > div.noticeDiv > div.Img5con > .lastCon {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* 마지막 인사말 글씨 */
+main > div.noticeDiv > div.Img5con > .byeCon {
+    font-weight: bold;
+}
+
+/* 이미지1 디브 가운데 정렬 */
+main > div.noticeDiv div.Img1Div,
+main > div.noticeDiv div.Img2Div,
+main > div.noticeDiv div.Img3Div,
+main > div.noticeDiv div.Img4Div,
+main > div.noticeDiv div.Img5Div {
+    display: flex;
+    justify-content: center;
+}
+
+main > div.noticeDiv .Img1con,
+main > div.noticeDiv .Img2con,
+main > div.noticeDiv .Img34con,
+main > div.noticeDiv .Img5con {
+    text-align: center;
+}
+
+
+
+/* 100개 한정 테이스팅 노트 살펴보기 폰트 */
+main > div.noticeDiv .noteCon {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ---------------반응형 ------------------ */
+/* 690px부터 제목 글씨 크기 줄이기 */
+@media screen and (max-width: 690px) {
+    main > div.noticeDiv {
+        width: 80vw;
+    } 
+    main > div.noticeDiv > .noticeTitle {
+        font-size: 7vw;
+    }
+    main > div.noticeDiv > div.title {
+        font-size: 3.6vw;
+    }
+    main > div.noticeDiv > div.subTitle {
+        font-size: 2vw;
+        height: auto;
+    }
+}
