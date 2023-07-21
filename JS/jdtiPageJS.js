@@ -8,11 +8,11 @@ function jdtiNextPage(pageNumber,userChoice){
 }
 function resultAnalysis(){
     document.getElementById("jdtiPage7").style.display="none";
+    document.getElementById("jdtiProgress").style.display="none";
     document.getElementById("jdtiResultLoading").style.display="block";
     setTimeout(()=>{
-        document.getElementById("jdtiResultLoading").style.display="none";
-        document.getElementById("jdtiTestHeaderText").style.display="none";
-        document.getElementById("jdtiResult").style.display="block";
+        document.getElementById("jdtiSection1").style.display="none";
+        document.getElementById("jdtiSection2").style.display="block";
     }, 3000)
 }
 $(".jdtiOption > div > span").on("click",function(){

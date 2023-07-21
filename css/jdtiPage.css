@@ -1,12 +1,35 @@
-.jdti{
+.jdtiMain{
+    text-align:center ;
+    padding-top:60px;
+    padding-bottom: 80px;
+}
+#jdtiSection1{
+    border:1px black solid;
     text-align: center;
-    height:80vh;
-    font-size:50px;
+    font-size:16px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-top:130px;
-    padding-bottom: 60px;
+    width:440px;
+    height:500px;
+    padding:30px;
+    border-radius: 70px;
+    background-color:burlywood;
+    margin:auto;
+}
+#jdtiSection2{
+    border:1px black solid;
+    text-align: center;
+    font-size:16px;
+    display:none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:440px;
+    height:1000px;
+    padding:30px;
+    border-radius: 70px;
+    background-color:burlywood;
+    margin:auto;
 }
 .jdtiTestHeader{
     text-align: center;
@@ -15,7 +38,7 @@
     justify-content: space-evenly;
 }
 .jdtiLogo{
-    width:10vh;
+    width:100px;
     aspect-ratio: 8 / 5;
 }
 #jdtiPage0 ~ div{
@@ -30,30 +53,51 @@
     border:2px solid brown;
 }
 #jdtiResultLoading {
-    position:relative;
+    display: flex;
 }
 #jdtiResultLoading > div{
-    width:2vw;
-    height:2vw;
-    border-radius:1vw;
+    width:20px;
+    height:20px;
+    border-radius:50%;
     position: absolute;
+    padding-top:30px;
 }
 .jdtiLoadingCircle1{
     background-color: red;
     animation:jdtiLoadingCircleAni 3s linear 2;
-    left:40vw;
+    left:40%;
 }
 .jdtiLoadingCircle2{
     background-color: blue;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:0.5s;
-    left:50vw;
+    left:50%;
 }
 .jdtiLoadingCircle3{
     background-color: lime;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:1s;
-    left:60vw;
+    left:60%;
+}
+#jdtiResultName{
+    font-size:24px;
+    font-weight:bold;
+}
+#jdtiResultImg{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    margin:auto;
+    border:1px solid black;
+    position:relative;
+    background-color: white;
+}
+#jdtiResultImg > img{
+    width:60%;
+    margin-top:11%;
+}
+td > img{
+    width:100%;
 }
 
 @keyframes jdtiLoadingCircleAni{
@@ -61,7 +105,7 @@
 
     }
     10%{
-        transform:translateY(-3vw);
+        transform:translateY(-30px);
     }
     20%{
         transform:translateY(0vw);
@@ -70,110 +114,15 @@
         transform:translateY(0vw);
     }
     70%{
-        transform:translateY(-3vw);
+        transform:translateY(-30px);
     }
     80%{
         transform:translateY(0vw);
     }
 }
 
-@media screen and (max-height:1800px){
-    .jdti{
-    font-size:45px;
-    }
-}
 @media screen and (max-width:1300px){
-    .jdti{
-    font-size:40px;
-    }
-}
-@media screen and (max-height:1600px){
-    .jdti{
-    font-size:40px;
-    }
-}
-@media screen and (max-height:1400px){
-    .jdti{
-    font-size:35px;
-    }
-}
-@media screen and (max-width:1100px){
-    .jdti{
-    font-size:35px;
-    }
-}
-@media screen and (max-width:900px){
-    .jdti{
-    font-size:30px;
-    }
-}
-@media screen and (max-height:1250px){
-    .jdti{
-    font-size:30px;
-    }
-}
-@media screen and (max-height:1100px){
-    .jdti{
-    font-size:25px;
-    }
-}
-@media screen and (max-width:750px){
-    .jdti{
-    font-size:25px;
-    }
-}
-@media screen and (max-width:600px){
-    .jdti{
-    font-size:20px;
-    }
-}
-@media screen and (max-height:900px){
-    .jdti{
-    font-size:20px;
-    }
-}
-@media screen and (max-height:700px){
-    .jdti{
-    font-size:18px;
-    }
-}
-@media screen and (max-height:600px){
-    .jdti{
+    .jdtiSection{
     font-size:16px;
-    }
-}
-@media screen and (max-width:500px){
-    .jdti{
-    font-size:15px;
-    }
-}
-@media screen and (max-height:550px){
-    .jdti{
-    font-size:14px;
-    }
-}
-@media screen and (max-width:400px){
-    .jdti{
-    font-size:13px;
-    }
-}
-@media screen and (max-height:500px){
-    .jdti{
-    font-size:12px;
-    }
-}
-@media screen and (max-width:350px){
-    .jdti{
-    font-size:11px;
-    }
-}
-@media screen and (max-height:450px){
-    .jdti{
-    font-size:10px;
-    }
-}
-@media screen and (max-height:350px){
-    .jdti{
-    font-size:8px;
     }
 }
