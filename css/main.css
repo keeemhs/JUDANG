@@ -1,5 +1,5 @@
 body {
-    background-color: #dddddb;
+    background-color: white;
 }
 
 header {
@@ -181,7 +181,7 @@ sec-2{
 .img_content>*>img {
     width: 350px;
     height: 320px;
-    border:1px solid black;
+    
     border-radius: 50%;
 }
 
@@ -220,7 +220,7 @@ sec-2{
     background-repeat: no-repeat;
     background-image: url(/image/next.png);
     border-radius: 50%;
-    border: 1px solid black;
+    
 }
 
 .button_before {
@@ -237,7 +237,7 @@ sec-2{
     background-repeat: no-repeat;
     background-image: url(/image/before.png);
     border-radius: 50%;
-    border: 1px solid black;
+
 }
 
 @media screen and (max-width:1000px){
