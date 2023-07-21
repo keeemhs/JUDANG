@@ -44,7 +44,7 @@ function colorReset() {
 function clickSeoul() {
     colorReset();
 
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/서울.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/서울.png"
     document.getElementById("list1").src = "./술목록/서울특별시/참이슬.png"
     document.getElementById("list2").src = "./술목록/서울특별시/향온주.png"
     document.getElementById("list3").src = "./술목록/서울특별시/옥로주.png"
@@ -59,7 +59,7 @@ function clickSeoul() {
 function clickGangwon() {
     colorReset();
     
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/강원도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/강원도.png"
     document.getElementById("list1").src = "./술목록/강원도/처음처럼.png"
     document.getElementById("list2").src = "./술목록/강원도/메밀로25.png"
     document.getElementById("list3").src = "./술목록/강원도/사임당옥막걸리.png"
@@ -74,7 +74,7 @@ function clickGangwon() {
 function clickChungnam() {
     colorReset();
     
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/충청남도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/충청남도.png"
     document.getElementById("list1").src = "./술목록/충청남도/맑은린.png"
     document.getElementById("list2").src = "./술목록/충청남도/가야곡왕주.png"
     document.getElementById("list3").src = "./술목록/충청남도/계룡백일주.png"
@@ -89,7 +89,7 @@ function clickChungnam() {
 function clickChungbuk() {
     colorReset();
 
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/충청북도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/충청북도.png"
     document.getElementById("list1").src = "./술목록/충청북도/덕산막걸리.png"
     document.getElementById("list2").src = "./술목록/충청북도/청명주.png"
     document.getElementById("list3").src = "./술목록/충청북도/청풍.png"
@@ -104,7 +104,7 @@ function clickChungbuk() {
 function clickGyeongnam() {
     colorReset();
 
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/경상남도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/경상남도.png"
     document.getElementById("list1").src = "./술목록/경상남도/좋은데이.png"
     document.getElementById("list2").src = "./술목록/경상남도/백지.png"
     document.getElementById("list3").src = "./술목록/경상남도/백지.png"
@@ -119,7 +119,7 @@ function clickGyeongnam() {
 function clickGyeongbuk() {
     colorReset();
 
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/경상북도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/경상북도.png"
     document.getElementById("list1").src = "./술목록/경상북도/C1.png"
     document.getElementById("list2").src = "./술목록/경상북도/대선.png"
     document.getElementById("list3").src = "./술목록/경상북도/하향주.png"
@@ -134,7 +134,7 @@ function clickGyeongbuk() {
 function clickJeonnam() {
     colorReset();
 
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/전라남도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/전라남도.png"
     document.getElementById("list1").src = "./술목록/전라남도/잎새주.png"
     document.getElementById("list2").src = "./술목록/전라남도/홍주.png"
     document.getElementById("list3").src = "./술목록/전라남도/백지.png"
@@ -149,7 +149,7 @@ function clickJeonnam() {
 function clickJeonbuk() {
     colorReset();
 
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/전라북도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/전라북도.png"
     document.getElementById("list1").src = "./술목록/전라북도/이강고.png"
     document.getElementById("list2").src = "./술목록/전라북도/존버1925.png"
     document.getElementById("list3").src = "./술목록/전라북도/백지.png"
@@ -164,7 +164,7 @@ function clickJeonbuk() {
 function clickJeju() {
     colorReset();
 
-    document.getElementById("mainimg").src = "./우리나라 지도 모음/제주도.png"
+    document.getElementById("mainimg").src = "./우리나라지도모음/제주도.png"
     document.getElementById("list1").src = "./술목록/제주도/한라산.png"
     document.getElementById("list2").src = "./술목록/제주도/고소리술.png"
     document.getElementById("list3").src = "./술목록/제주도/오메기술.png"
