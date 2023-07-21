@@ -24,9 +24,9 @@
             </div>
             <div class="navBar">
                 <ul>
-                    <li><a href="./">지역별로 보기</a></li>|
-                    <li><a href="">주류 MBTI</a></li>|
-                    <li>주류 페스티벌</li>
+                    <li><a href="./regionView.html">지역별로 보기</a></li>|
+                    <li><a href="./jdti.html">주류 MBTI</a></li>|
+                    <li><a href="./festival.html">주류 페스티벌</a></li>
                 </ul>
             </div>
             <div class="searchLogin">
@@ -34,7 +34,7 @@
                     <input type="search" placeholder="제품검색 ex) 안동소주" />
                 </div>
                 <div class="login">
-                    <a href="">
+                    <a href="./loginPage.html">
                         <img src="./image/person-circle.svg" width="30px" />
                     </a>
                 </div>
@@ -65,13 +65,13 @@
                                         <a class="nav-link active" aria-current="page" href="./main.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">지역별로 보기</a>
+                                        <a class="nav-link" href="./regionView.html">지역별로 보기</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">주류 MBTI</a>
+                                        <a class="nav-link" href="./jdti.html">주류 MBTI</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">주류 페스티벌</a>
+                                        <a class="nav-link" href="./festival.html">주류 페스티벌</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex mt-3" role="search">
@@ -103,28 +103,352 @@
                 <div class="jeju do">제주도</div>
             </div>
         </section>
-        <section class="festival_recommand">
-            <div class="recommand_wrap">
-                <div class="recommand_title title">경기도 추천</div>
-                <div class="recommand_sub_title">주당이 자신있게 추천드리는 축제에요</div>
-                <div class="swiper_slider">
-                    <!-- Slider main container -->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide"><img src="./image/경기-페스티벌1.jpg" alt="경기"></div>
-                            <div class="swiper-slide"><img src="./image/경기-페스티벌2.jpeg" alt="경기"></div>
-                            <div class="swiper-slide"><img src="./image/경기-페스티벌3.png" alt="경기"></div>
-                            <div class="swiper-slide"><img src="./image/경기-페스티벌4.png" alt="경기"></div>
-                            <div class="swiper-pagination"></div>
+        <section class="recommand_wrap">
+            <div class="recommand_title title">이번달 인기있는 축제</div>
+            <div class="recommand_sub_title">주당이 자신있게 추천드리는 축제에요</div>
+            <div class="swiper_slider">
+                <!-- Slider main container -->
+                <!-- <div class="swiper">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./image/경기-페스티벌1.jpg" alt="경기"></div>
+                        <div class="swiper-slide"><img src="./image/강원-페스티벌2.jpg" alt="경기"></div>
+                        <div class="swiper-slide"><img src="./image/경기-페스티벌3.png" alt="경기"></div>
+                        <div class="swiper-slide"><img src="./image/경기-페스티벌4.jpg" alt="경기"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div> 이전 버전 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./image/강원-페스티벌.png" />
                         </div>
-                        <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-slide">
+                            <img src="./image/강원-페스티벌2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/경기-페스티벌3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/제주-페스티벌2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/충청-페스티벌3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/경상-페스티벌2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./image/경기-페스티벌4.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <div class="festival_divid"></div>
+        <section class="festival_recommand">
+            <div class="festival_now gyeong-gi">
+                <div class="now_title title">
+                    현재 진행중인 페스티벌
+                </div>
+                <div class="now_subtitle">
+                    현재 경기도에서 진행중인 페스티벌이에요
+                </div>
+                <div class="now_festival_wapper">
+                    <div class="now_festival">
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/경기-페스티벌1.jpg" alt="경기">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/경기-페스티벌2.jpeg" alt="경기">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/경기-페스티벌3.png" alt="경기">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/경기-페스티벌4.jpg" alt="경기">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="festival_now gang-won">
+                <div class="now_title title">
+                    현재 진행중인 페스티벌
+                </div>
+                <div class="now_subtitle">
+                    현재 강원도에서 진행중인 페스티벌이에요
+                </div>
+                <div class="now_festival_wapper">
+                    <div class="now_festival">
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/강원-페스티벌.png" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/강원-페스티벌2.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/강원-페스티벌3.png" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/강원-페스티벌4.jpg" alt="경기">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="festival_now chungcheong">
+                <div class="now_title title">
+                    현재 진행중인 페스티벌
+                </div>
+                <div class="now_subtitle">
+                    현재 강원도에서 진행중인 페스티벌이에요
+                </div>
+                <div class="now_festival_wapper">
+                    <div class="now_festival">
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/충청-페스티벌1.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/충청-페스티벌2.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/충청-페스티벌3.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="festival_now gyeongsang ">
+                <div class="now_title title">
+                    현재 진행중인 페스티벌
+                </div>
+                <div class="now_subtitle">
+                    현재 경상도에서 진행중인 페스티벌이에요
+                </div>
+                <div class="now_festival_wapper">
+                    <div class="now_festival">
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/경상-페스티벌.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/경상-페스티벌2.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/경상-페스티벌3.png" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-
-
+                </div>
+            </div>
+            <div class="festival_now jeonla">
+                <div class="now_title title">
+                    현재 진행중인 페스티벌
+                </div>
+                <div class="now_subtitle">
+                    현재 전라도에서 진행중인 페스티벌이에요
+                </div>
+                <div class="now_festival_wapper">
+                    <div class="now_festival">
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/전라-페스티벌.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/전라-페스티벌2.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/전라-페스티벌3.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="festival_now jeju">
+                <div class="now_title title">
+                    현재 진행중인 페스티벌
+                </div>
+                <div class="now_subtitle">
+                    현재 제주도에서 진행중인 페스티벌이에요
+                </div>
+                <div class="now_festival_wapper">
+                    <div class="now_festival">
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/제주-페스티벌.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                        <div class="now_festival_1">
+                            <div class="now_festival_1_img">
+                                <img src="./image/제주-페스티벌2.jpg" alt="강원">
+                            </div>
+                            <div class="now_festival_info">
+                                <div class="now_festival_info_title"><strong>이름</strong>: 경기 페스티벌</div>
+                                <div class="now_festival_info_place"><strong>주소</strong>: 경기도 수원시 영통구</div>
+                                <div class="now_festival_info_explain"><strong>설명</strong>:
+                                    ㅁㄴㅇㄹㄹㄴㅁㄹㄴㅇㅁㄹㄴㅁㅇㄹㄴㅁㄹ니아런임러ㅣㅁㄴ;러ㅣㄴ럼ㄴ리ㅏㅓㄴ미라
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

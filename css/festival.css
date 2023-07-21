@@ -2,6 +2,9 @@
     width: 100%;
     height: 250px;
 }
+main{
+    background-color: white;
+}
 
 .title{
     font-size: 32px;
@@ -16,7 +19,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
-    border-bottom: 1px solid white;
+
 }
 .do{
     line-height: 54px;
@@ -28,27 +31,33 @@
     justify-content: center;
     margin: 0px 30px;
 }
-.recommand_sub_title{
+.recommand_wrap{
+    border-bottom: 1px solid #adb5bd;
+    padding-bottom: 30px;
+}
+.recommand_sub_title ,.now_subtitle{
     font-size: 16px;
     margin-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
 }
 
-.swiper {
-    width: 600px;
+/* 이전 버전 */
+
+/* .swiper {
+    width: 50%;
     height: 300px;
 
     margin-bottom: 40px;
 }
 .swiper-slide img{
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 .swiper .swiper-pagination-bullet {
     background-color: #000;
     margin: 0 10px;
-  }
+  } */
   /* .pagination{
     position: relative;
   }
@@ -57,11 +66,11 @@
     bottom: 305px !important;
   } */
   
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  /* .swiper-pagination-bullets.swiper-pagination-horizontal {
 
-    width: 52px  !important;
-    left:90% !important;
-    top:10% !important;
+    width: 64px !important;
+    left: 86% !important;
+    top: 4% !important;
     
   }
   .swiper-scrollbar{
@@ -69,4 +78,194 @@
   }
 .swiper-scrollbar-drag{
     background-color: white !important;
+} */
+/* 여기까지 */
+
+/* 고친 버전  */
+/* html,
+    body {
+      position: relative;
+      height: 100%;
+    } */
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .festival_recommand,.recommand_wrap,.festival_nav{
+        padding: 50px 70px 30px 70px;
+    }
+    .festival_nav{
+        border-bottom: 1px solid black;
+    }
+
+    .swiper {
+        width: 50%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+  
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+      .swiper {
+        width: 60%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+  
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+      .swiper-wrapper{
+        width:36% !important;
+      }
+
+
+  /* 여기까지 */
+.now_festival{
+    margin: 20px;
 }
+.now_festival_1{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    margin:15px 0px;
+    box-shadow: 4px 3px 8px 0px;
+}
+.now_festival_1_img{
+    margin: 10px;
+    width: 150px;
+    height: 130px;
+    border: 1px solid black;
+}
+.now_festival_1_img > img{
+    width: 100%;
+    height: 100%;
+}
+.now_festival_info{
+    margin: 10px;
+}
+.now_festival_info_title{
+    font-size: 20px;
+}
+.now_festival_info_place{
+    font-size: 20px;
+}
+.now_festival_info_explain{
+    font-size: 20px;
+}
+.active{
+    display: none;
+}
+
+.do:hover{
+    cursor: pointer;
+    box-shadow: 1px 4px 6px 1px;
+}
+
+@media screen and (max-width: 900px) {
+    .ad > img{
+        height: 200px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    .do{
+        font-size: 10px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .recommand_sub_title,.now_subtitle{
+        font-size: 14px;
+    }
+    .now_festival{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .now_festival>*:nth-child(2n-1){
+        margin-right: 20px;
+    }
+    .now_festival_1{
+        display: flex;
+        flex-direction: column;
+        width: 46%;
+        align-items: center;
+        padding: 20px;
+        
+    }
+    .now_festival_1 *{
+        font-size: 16px;
+    }     
+    .now_festival_1_img{
+        width: 100%;
+    }      
+    .festival_recommand, .recommand_wrap, .festival_nav{
+        padding: 30px;
+    } 
+}
+
+@media screen and (max-width: 600px){
+        .ad > img{
+            height: 130px;
+        }
+        .title{
+            font-size: 17px;
+            padding-bottom: 0px;
+        }
+        .do{
+            margin: 0px 10px;
+        }
+        .recommand_sub_title, .now_subtitle{
+            font-size: 10px;
+             padding-bottom: 0px;
+        }
+        .now_festival_1_img {
+            height: 100px;
+            
+        }
+        .now_festival_1{
+            padding: 10px;
+        }
+        .now_festival_1 * {
+            font-size: 12px;
+        }
+        .now_festival {
+            margin: 10px;
+        }
+        .festival_recommand, .recommand_wrap, .festival_nav{
+            padding: 0px;
+        }
+        .select_region{
+            padding-bottom: 0px;
+        }
+        .swiper_slider{
+            padding-bottom: 20px;
+        }
+}
+
