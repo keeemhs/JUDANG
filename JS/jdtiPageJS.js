@@ -17,7 +17,7 @@ function resultAnalysis(){
 }
 $(".jdtiOption > div > span").on("click",function(){
     setTimeout(()=>{
-        $(this).attr("style","background-color: blue ; opacity:0.5;")
+        $(this).attr("style","background-color:tomato ; opacity:0.5;")
     }, 250)
     setTimeout(()=>{
         let userChoiceAdj=$(this).text()[0]-1;

@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'YeongdeokBlueroad';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/YeongdeokBlueroad.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'YeongdeokBlueroad';
+}
 .jdtiMain{
     text-align:center ;
     padding-top:60px;
@@ -25,7 +34,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     width:440px;
-    height:1000px;
+    height:1190px;
     padding:30px;
     border-radius: 70px;
     background-color:burlywood;
@@ -46,6 +55,7 @@
 }
 .jdtiOption > div{
     margin-top: 15px;
+    cursor: pointer;
 }
 .jdtiOption > div > span{
     border-radius: 4px;
@@ -65,23 +75,29 @@
 .jdtiLoadingCircle1{
     background-color: red;
     animation:jdtiLoadingCircleAni 3s linear 2;
-    left:40%;
+    left:46.5%;
 }
 .jdtiLoadingCircle2{
     background-color: blue;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:0.5s;
-    left:50%;
+    left:49.5%;
 }
 .jdtiLoadingCircle3{
     background-color: lime;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:1s;
-    left:60%;
+    left:52.5%;
 }
 #jdtiResultName{
     font-size:24px;
     font-weight:bold;
+}
+#jdtiResultBox{
+    border:1px black solid;
+    border-radius: 40px;
+    display: inline-block;
+    padding:20px;
 }
 #jdtiResultImg{
     width:200px;
@@ -99,7 +115,6 @@
 td > img{
     width:100%;
 }
-
 @keyframes jdtiLoadingCircleAni{
     0%{
 
@@ -121,8 +136,23 @@ td > img{
     }
 }
 
-@media screen and (max-width:1300px){
-    .jdtiSection{
-    font-size:16px;
+@media screen and (max-width:600px){
+    #jdtiSection1{
+        font-size:11px;
+        width:300px;
+    }
+    #jdtiSection2{
+        font-size:12px;
+        width:300px;
+        height:1030px;
+    }
+    .jdtiLoadingCircle1{
+        left:39%;
+    }
+    .jdtiLoadingCircle2{
+        left:49%;
+    }
+    .jdtiLoadingCircle3{
+        left:59%;
     }
 }
