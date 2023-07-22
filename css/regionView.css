@@ -257,6 +257,8 @@ main {
         width: 100vw;
         padding-right: 0;
         margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
     }
     .sec1 {
         display: none;
@@ -268,6 +270,13 @@ main {
         font-size: 13px;
         padding: 4px;
         display: inline-block;
+    }
+    .sec2 > .sec4 > .list {
+        width: 40vw;
+        height: 45vw;
+        border: 2px solid white;
+        background-color: transparent;
+        margin: 0 auto;
     }
 }
 
