@@ -12,6 +12,8 @@ function resultAnalysis(){
     document.getElementById("jdtiResultLoading").style.display="block";
     setTimeout(()=>{
         document.getElementById("jdtiSection1").style.display="none";
+        document.getElementById("jdtiNullSpace1").style.display="none";
+        document.getElementById("jdtiNullSpace2").style.display="none";
         document.getElementById("jdtiSection2").style.display="block";
     }, 3000)
 }
