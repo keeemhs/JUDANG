@@ -120,6 +120,16 @@ video {
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 600px) {
+    video {
+        position: relative;
+        overflow: hidden;
+        width: 1000px;
+        height: 300px;
+        padding: 0;
+    }
+}
 /* ====================== section1 css end ========================== */
 
 @media screen and (max-width: 900px) {
