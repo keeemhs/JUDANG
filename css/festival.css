@@ -1,9 +1,12 @@
 @font-face {
-    font-family: 'YeongdeokBlueroad';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/YeongdeokBlueroad.woff2') format('woff2');
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-background-color: white;
+}
+
+main > * {
+    font-family: 'GangwonEdu_OTFBoldA';
 }
 .ad > img{
     width: 100%;
@@ -100,9 +103,6 @@ background-color: white;
       color: #000;
       margin: 0;
       padding: 0;
-    }
-    main> *{
-        font-family:"YeongdeokBlueroad" ;
     }
     .festival_recommand,.recommand_wrap,.festival_nav{
         padding: 50px 70px 30px 70px;
