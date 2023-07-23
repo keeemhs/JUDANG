@@ -12,6 +12,9 @@ main > * {
     width: 100%;
     height: 250px;
 }
+main{
+    background-color: white;
+}
 
 
 .title{
@@ -112,7 +115,7 @@ main > * {
     }
 
     .swiper {
-        width: 50%;
+        width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
       }
@@ -166,8 +169,8 @@ main > * {
 }
 .now_festival_1_img{
     margin: 10px;
-    width: 150px;
-    height: 130px;
+    width: 11%;
+    height: 150px;
     border: 1px solid black;
 }
 .now_festival_1_img > img{
@@ -176,6 +179,7 @@ main > * {
 }
 .now_festival_info{
     margin: 10px;
+    width: 80%;
 }
 .now_festival_info_title{
     font-size: 20px;
@@ -254,7 +258,7 @@ main > * {
              padding-bottom: 0px;
         }
         .now_festival_1_img {
-            height: 100px;
+            height: 140px;
             
         }
         .now_festival_1{
@@ -275,5 +279,9 @@ main > * {
         .swiper_slider{
             padding-bottom: 20px;
         }
+        .swiper {
+            width: 100%;
+ 
+          }
 }
 
