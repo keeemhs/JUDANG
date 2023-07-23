@@ -4,7 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
+main > *{
     font-family: 'GangwonEdu_OTFBoldA';
 }
 #jdtiNullSpace1{
