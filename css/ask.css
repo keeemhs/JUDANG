@@ -1,0 +1,133 @@
+footer{
+    height: 700px;
+}
+main{
+    background-color: white;
+}
+.main_wrapper{
+    padding:0 7.69% 50px;
+}
+.inquiry_wrapper{
+    padding: 80px 0 37px;
+    font-size: 30px;
+    line-height: 36px;
+    border-bottom: 1px solid black;
+}
+.content_wrapper,.file_wrapper{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.content_category{
+    display: flex;
+}
+.content_category_title{
+    width: 20%;
+}
+.content_category_select{
+    display: flex;
+    width: 100%;
+}
+.content_category_select  select{
+    border:1px solid #aaa;
+}
+.content_category_select1,.content_category_select2{
+    width: 100%;
+}
+.question,.content_category_select2{
+    width: 90%;
+}
+.answer{
+    width: 100%;
+}
+.content_inquiry{
+    margin-top: 20px;
+    display: flex;
+}
+.content_inquiry_title{
+    width: 20%;
+}
+.content_inquiry_content{
+    width: 100%;
+}
+.content_inquiry_content > textarea{
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    height: 298px;
+    padding: 10px;
+    border:1px solid #aaa;
+    font-size: 18px;
+    color:#3333338c;
+}
+.file_wrapper{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.box_none{
+    width: 20%;
+}
+.file_add{
+    width: 100%;
+    padding-bottom: 30px;
+}
+.file{
+    border: none;
+    color:white;
+    background-color:#3333338c;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+}
+.file_title{
+    margin-top: 10px;
+    color:#3333338c;
+}
+.final_btn_wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.final_button{
+    width: 500px;
+    height: 70px;
+    font-size: 24px;
+    background-color: #fae102;
+    color:black;
+    border: none;
+}
+@media screen and (max-width: 600px){
+    .inquiry_title{
+        font-size: 24px;
+    }
+    .content_category,.content_inquiry{
+        flex-direction: column;
+    }
+    .content_wrapper,.file_wrapper{
+        padding-left: 0px;
+    }
+    .content_category_title,.content_inquiry_title{
+        width: 100%;
+    }
+    .content_category_select,.content_inquiry_content{
+        margin-top: 5px;
+    }
+    .question,.answer,#text,.file_title{
+        font-size: 14px;
+    }
+    .box_none{
+        width: 0%;
+    }
+    /* .file_btn{
+        display: flex;
+        justify-content: center;
+    } */
+    .file{
+        width: 167px;
+        font-size: 14px;
+        height: 40px;
+    }
+    .final_button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
