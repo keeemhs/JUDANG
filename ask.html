@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/ask.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="imgDiv">
+                <a href="main.html">
+                    <img src="./image/주당로고배경x.png" width="120px" />
+                </a>
+            </div>
+            <div class="navBar">
+                <ul>
+                    <li><a href="./regionView.html">지역별로 보기</a></li>|
+                    <li><a href="./jdti.html">주류 MBTI</a></li>|
+                    <li><a href="./festival.html">주류 페스티벌</a></li>
+                </ul>
+            </div>
+            <div class="searchLogin">
+                <div class="searchInput">
+                    <input type="search" placeholder="제품검색 ex) 안동소주" />
+                </div>
+                <div class="login">
+                    <a href="./loginPage.html">
+                        <img src="./image/person-circle.svg" width="30px" />
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="ham">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./main.html">
+                            <img src="./image/주당로고배경x.png" width="120px" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <img src="./image/주당로고배경x.png" width="120px" />
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./main.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./regionView.html">지역별로 보기</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./jdti.html">주류 MBTI</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./festival.html">주류 페스티벌</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="제품검색 ex) 안동소주"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit"
+                                        style="width: 70px;">검색</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main_wrapper">
+        <section class="inquiry_wrapper">
+            <div class="inquiry">
+                <div class="inquiry_title"><strong>1:1 문의하기</strong></div>
+            </div>
+        </section>
+        <section class="content_wrapper">
+            <div class="content_category">
+                <div class="content_category_title"><strong>문의유형</strong></div>
+                <div class="content_category_select">
+                    <div class="content_category_select1">
+                        <select name="question" class="question">
+                            <option value="question1">선물하기 for Biz</option>
+                        </select>
+                    </div>
+                    <div class="content_category_select2">
+                        <select name="answer" class="answer">
+                            <option value="answer1">서비스 이용</option>
+                            <option value="answer2">가입/탈퇴</option>
+                            <option value="answer3">결제/증빙</option>
+                            <option value="answer4">비즈캐시</option>
+                            <option value="answer5">기타</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="content_inquiry">
+                <div class="content_inquiry_title"><strong>문의내용</strong></div>
+                <div class="content_inquiry_content">
+                    <textarea name="text" id="text" maxlength="3050"
+                        placeholder="문의유형을 선택후 문의내용을 자세하게 작성해주세요.자세한 내용을 함께 보내주시면 더욱 신속히 답변드릴수 있습니다.10월 18일부터 산업안전보건법에 고객응대 근로자 보호조치가 시행됩니다(시행 년도 2018년).고객응대근로자에게 폭언, 욕설 등을 하지 말아주세요."></textarea>
+                </div>
+            </div>
+        </section>
+        <section class="file_wrapper">
+            <div class="box_none"></div>
+            <div class="file_add">
+                <div class="file_btn">
+                    <button class="file">파일첨부하기 (0/10)</button>
+                </div>
+                <p class="file_title">
+                    jpg, gif, psd, png, tif, zip, pdf ,ms office, hwp 만 첨부 가능하고
+                    <br>
+                    20MB까지 등록가능하며 첨부파일은 답변완료가 되면 즉시 삭제됩니다.
+                </p>
+        </section>
+        <section class="final_btn_wrapper">
+            <button class="final_button">문의접수</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sec1">
+                <img src="./image/주당로고배경.png" class="footer-logo"></img>
+                <br /><br />
+                <span> 주당법인 우리코딩(주) 서울지점</span>
+                <br />
+                <span> 서울시 마포구 숭문4길 6</span>
+                <br />
+                <span> 대표 : 홍길동 | 사업자등록번호 : 000-00-00000 | 사업자번호조회 </span>
+                <br />
+                <span> 통신판매업신고번호:제2021-와부조안-0163호-01816호 </span>
+                <br />
+                <span> 대표번호 : 000-0000-0000 | 팩스번호 : 00-000-0000</span>
+                <br />
+                <span> 메일 : judang@naver.com</span>
+            </div>
+            <div class="footer-sec2-1">
+                <br />
+                <dt class="footer2-center">CS CENTER</dt>
+                <dd class="footer2-center-number">070-0000-0000</dd>
+                <span>평일 : 10:00 ~ 17:00</span>
+                <br />
+                <span>점심시간 : 12:00 ~ 13:00</span>
+                <br />
+                <span> 토요일 , 일요일 및 공휴일 제외</span>
+            </div>
+            <div class="footer-sec-container">
+                <div class="footer-sec2-2">
+                    <br />
+                    <dt class="footer2-center">CS CENTER</dt>
+                    <dd class="footer2-center-number">070-0000-0000</dd>
+                    <span>평일 : 10:00 ~ 17:00</span>
+                    <br />
+                    <span>점심시간 : 12:00 ~ 13:00</span>
+                    <br />
+                    <span> 토요일 , 일요일 및 공휴일 제외</span>
+                </div>
+                <div class="footer-sec3">
+                    <br />
+                    <h4 class="footer-sec3-helper">help</h4>
+                    <table>
+                        <tr>
+                            <td><a href="">1:1문의</a></td>
+                            <td><a href="">주문/배송조회</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">FAQ</a></td>
+                            <td><a href="">환불/입금</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">상품문의</a></td>
+                            <td><a href="">취소/반품/교환</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">고객센터</a></td>
+                            <td><a href="">찜리스트</a></td>
+                        </tr>
+                    </table>
+                    <img src="https://cdn-pro-web-251-115.cdn-nhncommerce.com/gsool18_godomall_com/data/skin/front/awesome_new/img/icon/icon_insta.png"
+                        width="40px">
+                    <img src="https://cdn-pro-web-251-115.cdn-nhncommerce.com/gsool18_godomall_com/data/skin/front/awesome_new/img/icon/icon_blog.png"
+                        width="40px">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
