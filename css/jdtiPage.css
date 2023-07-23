@@ -1,16 +1,54 @@
 @font-face {
-    font-family: 'YeongdeokBlueroad';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/YeongdeokBlueroad.woff2') format('woff2');
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 body{
-    font-family: 'YeongdeokBlueroad';
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+#jdtiNullSpace1{
+    height:345px;
+}
+#jdtiNullSpace2{
+    height:345px;
+}
+.openDoorImg{
+    position:absolute;
+    height: 100%;
+    bottom:0px;
+}
+.leftDoor{
+    transform: translateX(-227px);
+    animation: openLeftDoorAni 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes openLeftDoorAni{
+    from{
+
+    }
+    to{
+        transform: translateX(-715px);
+    }
+}
+.rightDoor{
+    animation: openRightDoorAni 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes openRightDoorAni{
+    from{
+
+    }
+    to{
+        transform: translateX(240px);
+    }
 }
 .jdtiMain{
     text-align:center ;
     padding-top:60px;
     padding-bottom: 80px;
+    position:relative;
+    overflow: hidden;
 }
 #jdtiSection1{
     border:1px black solid;
@@ -61,6 +99,7 @@ body{
     border-radius: 4px;
     background-color:burlywood;
     border:2px solid brown;
+    padding:10px 2px 6px 2px;
 }
 #jdtiResultLoading {
     display: flex;
@@ -154,5 +193,36 @@ td > img{
     }
     .jdtiLoadingCircle3{
         left:59%;
+    }
+    #jdtiNullSpace1{
+        height:265px;
+    }
+    #jdtiNullSpace2{
+        height:265px;
+    }
+    .leftDoor{
+        transform: translateX(-227px);
+        animation: openLeftDoorAni 1s linear;
+        animation-fill-mode: forwards;
+    }
+    @keyframes openLeftDoorAni{
+        from{
+    
+        }
+        to{
+            transform: translateX(-595px);
+        }
+    }
+    .rightDoor{
+        animation: openRightDoorAni 1s linear;
+        animation-fill-mode: forwards;
+    }
+    @keyframes openRightDoorAni{
+        from{
+    
+        }
+        to{
+            transform: translateX(180px);
+        }
     }
 }
