@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+main > * {
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
 main {
     height: 60vh;
 }
@@ -21,7 +32,7 @@ main > .loginIDPW {
 
 /* input 배경 변경 */
 main > .loginIDPW > div > input {
-    background-color: #dddddb;
+    background-color: white;
     border: none;
     border-bottom: 1px solid #000000;
     font-size: 20px;
@@ -35,7 +46,7 @@ main > .btnDiv > * {
 
 /* 로그인 및 회원가입 버튼 설정 */
 main > .btnDiv > button {
-    background-color: #dddddb;
+    background-color: white;
     font-size: 20px;
     border: none;
     border-bottom: 2px solid #000000;

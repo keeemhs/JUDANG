@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/faqPage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.4/tailwind.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="imgDiv">
+                <a href="index.html">
+                    <img src="./image/주당로고배경x.png" width="120px" />
+                </a>
+            </div>
+            <div class="navBar">
+                <ul>
+                    <li><a href="./regionView.html">지역별로 보기</a></li>|
+                    <li><a href="./jdti.html">주류 MBTI</a></li>|
+                    <li><a href="./festival.html">주류 페스티벌</a></li>
+                </ul>
+            </div>
+            <div class="searchLogin">
+                <div class="searchInput">
+                    <input type="search" placeholder="제품검색 ex) 안동소주" />
+                </div>
+                <div class="login">
+                    <a href="./loginPage.html">
+                        <img src="./image/person-circle.svg" width="30px" />
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="ham">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./image/주당로고배경x.png" width="120px" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <img src="./image/주당로고배경x.png" width="120px" />
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./regionView.html">지역별로 보기</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./jdti.html">주류 MBTI</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./festival.html">주류 페스티벌</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="제품검색 ex) 안동소주"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit"
+                                        style="width: 70px;">검색</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="faqCon">
+            <section class="section section-faq">
+                <div class="container mx-auto">
+                    <span class="faqTitle">FAQ</span>
+                    <div class="faq-box">
+                        <ul>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 배송기간은 얼마나 걸리나요?</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 영업일 기준 오후 1시 이전 결제 완료 주문건 :
+                                    </div>
+                                    <div>
+                                        <span style="color:red;">당일출고</span>됩니다. (일부상품 제외)
+                                    </div>
+                                    <div>
+                                        - 공휴일의 경우 다음 영업일에 출고됩니다.
+                                    </div>
+                                    <div>
+                                        (출고된 경우 서울/수도권 지역은 대부분 다음날 수령, 지방은 1~3일 이내에 배송됩니다. 따라서 전체 배송 기간은 (업무일 기준) 3일~7일
+                                        정도
+                                        소요되며, 일부 택배사 사정에 따라 변동될 수 있습니다.)
+                                    </div>
+                                    <div>
+                                        ※ 주문 상품이 재고 부족일 경우 부득이하게 배송 시간은 달라질 수 있는 점 양해 부탁드립니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 고객센터의 상담 시간을 알고 싶어요.</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 고객센터 전화번호 : 1544-9180
+                                    </div>
+                                    <div>
+                                        - 상담 시간 : 평일 오전 9시 30분 ~ 오후 6시 (점심시간 : 오전 11시 30분 ~ 오후 1시 30분 / 주말, 공휴일 휴무)
+                                    </div>
+                                    <div>
+                                        - 전화 연결이 어려운 경우 카카오 상담톡으로 문의를 남겨주시면 확인 후 정성껏 답변드리겠습니다.
+                                    </div>
+                                    <div>
+                                        ※ 문의량이 많을 경우 상담 연결 및 답변이 지연될 수 있습니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 배송 전 취소 하고 싶어요!</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 주문 당일 취소를 원하시는 고객님께서는 사이트에서 취소 요청을 해주신 뒤, 고객센터(1544-9180)로 문의하여 취소 접수를 부탁드립니다.
+                                    </div>
+                                    <div>
+                                        - 취소 접수를 하지 않은 건에 대해서는 상품이 출고되어 주문 취소가 불가합니다. 이 경우 부득이하게 반품으로 처리 될 수 있습니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 교환/반품 신청은 어떻게 하나요?</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 수령일 기준 7일 이내에 교환/반품에 대한 청약철회 의사를 밝혀주시면 처리가 가능합니다.
+                                    </div>
+                                    <div>
+                                        - 교환/반품 절차 : 마이페이지 → 주문내역 → 교환/반품 신청 → 수거기사님 방문예정
+                                    </div>
+                                    <div>
+                                        - 구매하신 쇼핑몰에서 신청해주시거나, 고객센터(1544-9180)으로 신청 부탁드립니다.
+                                    </div>
+                                    <div>
+                                        - 구매하신 제품의 AS를 원하는 경우에도 고객센터(1544-9180)으로 연락 부탁드립니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 교환/반품시 배송비는 어떻게 되나요?</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 단순 변심으로 인한 교환/환불 시 왕복 배송비 발생 됩니다.
+                                    </div>
+                                    <div>
+                                        - 제품 불량으로 인한 교환/환불 시 배송비는 발생되지 않습니다.
+                                    </div>
+                                    <div>
+                                        - 교환으로 인한 차액 발생시 구매하신 쇼핑몰 또는 카카오 상담톡으로 문의주시면 도와드리겠습니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 무통장 결제로 입금했는데 확인되지 않아요.</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 무통장입금 건은 입금 후 영업시간이내 1~2시간 이후에 확인이 가능하며,
+                                    </div>
+                                    <div>
+                                        주문 후 7일 이내로 입금 확인이 안될 경우 주문이 자동으로 취소 처리됩니다.
+                                    </div>
+                                    <br>
+                                    <div style="font-weight:bold;">
+                                        ▼자동 입금이 되지 않는 4가지 경우▼
+                                    </div>
+                                    <div>
+                                        1. 입금자명이 다를 경우 - 주문 시 기재한 입금자명과 실제 입금자명이 다를 경우 연락 부탁드립니다.
+                                    </div>
+                                    <div>
+                                        2. 결제 금액과 입금 금액이 불일치할 경우 - 결제 금액과 입금 금액이 일치하지 않을 경우 연락 부탁드리며, 초과 입금해주신 금액은 환불 처리
+                                        가능합니다.
+                                    </div>
+                                    <div>
+                                        3. 같은 주문서가 중복으로 존재할 경우 동일한 결제 정보의 주문서가 두 개 이상일 경우 자동 입금 연결이 되지 않습니다.
+                                    </div>
+                                    <div>
+                                        4. 구매의사가 없는 주문서의 경우 마이페이지 주문내역에서 취소하시고, 입금해주신 금액은 환불 처리 가능합니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 비회원으로 주문이 가능한가요?</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 회원가입 없이 [비회원 구매] 버튼을 선택하여 주문이 가능합니다.
+                                    </div>
+                                    <div>
+                                        - 비회원으로 주문시 주문 내용을 확인을 위해 '주문번호'와 '비밀번호'를 꼭 메모 부탁드립니다.
+                                    </div>
+                                    <div>
+                                        - 주문번호를 잊으신 경우에는 고객센터(1544-9180)으로 연락 부탁드립니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-box__question"><span>Q. 비회원 주문시 취소 및 변경은 어떻게 하나요?</span></div>
+                                <div class="faq-box__answer">
+                                    <div>
+                                        - 비회원 주문의 경우 직접 취소 및 주문서 변경 처리가 어렵습니다.
+                                    </div>
+                                    <div>
+                                        - 비회원 or 네이버 로그인으로 주문 후 취소/변경 및 교환/반품을 원하실 경우,
+                                    </div>
+                                    <div>
+                                        고객센터(1544-9180)로 주문자이름 , 휴대폰번호, 요청 내용과 함께 문의주시면 도와드리겠습니다.
+                                    </div>
+                                    <div>
+                                        - 단, 이미 제품이 발송된 경우에는 주문 취소가 불가합니다.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sec1">
+                <img src="./image/주당로고배경.png" class="footer-logo" style="display:inline-block;"></img>
+                <br /><br />
+                <span> 주당법인 우리코딩(주) 서울지점</span>
+                <br />
+                <span> 서울시 마포구 숭문4길 6</span>
+                <br />
+                <span> 대표 : 홍길동 | 사업자등록번호 : 000-00-00000 | 사업자번호조회 </span>
+                <br />
+                <span> 통신판매업신고번호:제2021-와부조안-0163호-01816호 </span>
+                <br />
+                <span> 대표번호 : 000-0000-0000 | 팩스번호 : 00-000-0000</span>
+                <br />
+                <span> 메일 : judang@naver.com</span>
+            </div>
+            <div class="footer-sec2-1">
+                <br />
+                <dt class="footer2-center">CS CENTER</dt>
+                <dd class="footer2-center-number">070-0000-0000</dd>
+                <span>평일 : 10:00 ~ 17:00</span>
+                <br />
+                <span>점심시간 : 12:00 ~ 13:00</span>
+                <br />
+                <span> 토요일 , 일요일 및 공휴일 제외</span>
+            </div>
+            <div class="footer-sec-container">
+                <div class="footer-sec2-2">
+                    <br />
+                    <dt class="footer2-center">CS CENTER</dt>
+                    <dd class="footer2-center-number">070-0000-0000</dd>
+                    <span>평일 : 10:00 ~ 17:00</span>
+                    <br />
+                    <span>점심시간 : 12:00 ~ 13:00</span>
+                    <br />
+                    <span> 토요일 , 일요일 및 공휴일 제외</span>
+                </div>
+                <div class="footer-sec3">
+                    <br />
+                    <h4 class="footer-sec3-helper">help</h4>
+                    <table>
+                        <tr>
+                            <td><a href="./ask.html">1:1문의</a></td>
+                            <td><a href="">주문/배송조회</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./faqPage.html">FAQ</a></td>
+                            <td><a href="">환불/입금</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">상품문의</a></td>
+                            <td><a href="">취소/반품/교환</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">고객센터</a></td>
+                            <td><a href="">찜리스트</a></td>
+                        </tr>
+                    </table>
+                    <img src="https://cdn-pro-web-251-115.cdn-nhncommerce.com/gsool18_godomall_com/data/skin/front/awesome_new/img/icon/icon_insta.png"
+                        width="40px" style="display:inline-block;">
+                    <img src="https://cdn-pro-web-251-115.cdn-nhncommerce.com/gsool18_godomall_com/data/skin/front/awesome_new/img/icon/icon_blog.png"
+                        width="40px" style="display:inline-block;">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/faqPage.js"></script>
+</body>
+
+</html>

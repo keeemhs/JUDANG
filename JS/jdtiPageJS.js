@@ -12,12 +12,14 @@ function resultAnalysis(){
     document.getElementById("jdtiResultLoading").style.display="block";
     setTimeout(()=>{
         document.getElementById("jdtiSection1").style.display="none";
+        document.getElementById("jdtiNullSpace1").style.display="none";
+        document.getElementById("jdtiNullSpace2").style.display="none";
         document.getElementById("jdtiSection2").style.display="block";
     }, 3000)
 }
 $(".jdtiOption > div > span").on("click",function(){
     setTimeout(()=>{
-        $(this).attr("style","background-color: blue ; opacity:0.5;")
+        $(this).attr("style","background-color:tomato ; opacity:0.5;")
     }, 250)
     setTimeout(()=>{
         let userChoiceAdj=$(this).text()[0]-1;

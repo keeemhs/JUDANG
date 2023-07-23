@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JDTI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/default.css">
@@ -88,6 +88,9 @@
 
 
     <main class="jdtiMain">
+        <img src="./image/moon.jpeg" class="openDoorImg leftDoor" id="leftDoor">
+        <img src="./image/moon.jpeg" class="openDoorImg rightDoor">
+        <div id="jdtiNullSpace1"></div>
         <span id="jdtiSection1">
             <div class="jdtiTestHeader">
                 <div><img src="./image/주당로고배경x.png" class="jdtiLogo"/></div>
@@ -106,18 +109,18 @@
                 <div><span>테스트 시작하기</span></div>
             </div>
             <div class="jdtiOption" id="jdtiPage1">
-                <div>좋아하는 도수를 선택해주세요</div>
-                <br/>
-                <div><span>1. 맥주처럼 낮은 도수</span></div>
-                <div><span>2. 와인처럼 중간 도수</span></div>
-                <div><span>3. 도수는 상관 없어요</span></div>
-            </div>
-            <div class="jdtiOption" id="jdtiPage2">
                 <div>달콤한 술을 좋아하시나요?</div>
                 <br/>
                 <div><span>1. 네!</span></div>
                 <div><span>2. 보통이요</span></div>
                 <div><span>3. 아니요</span></div>
+            </div>
+            <div class="jdtiOption" id="jdtiPage2">
+                <div>좋아하는 도수를 선택해주세요</div>
+                <br/>
+                <div><span>1. 맥주처럼 낮은 도수</span></div>
+                <div><span>2. 와인처럼 중간 도수</span></div>
+                <div><span>3. 도수는 상관 없어요</span></div>
             </div>
             <div class="jdtiOption" id="jdtiPage3">
                 <div>새콤한 술을 좋아하시나요?</div>
@@ -134,18 +137,18 @@
                 <div><span>3. 묽고 가벼운 풍미를 느낄 수 있는 술</span></div>
             </div>
             <div class="jdtiOption" id="jdtiPage5">
-                <div>쓴 맛의 강도는 어느 정도가 좋으세요?</div>
-                <br/>
-                <div><span>1. 술은 써야 제 맛! 많이 씁슬했으면 좋겠어요</span></div>
-                <div><span>2. 술을 마신다는 느낌만 낼 수 있으면 좋겠어요</span></div>
-                <div><span>3. 쓰지 않았으면 좋겠어요</span></div>
-            </div>
-            <div class="jdtiOption" id="jdtiPage6">
                 <div>탄산이 있는 술을 좋아하시나요?</div>
                 <br/>
                 <div><span>1. 네!</span></div>
                 <div><span>2. 보통이요</span></div>
                 <div><span>3. 아니요</span></div>
+            </div>
+            <div class="jdtiOption" id="jdtiPage6">
+                <div>쓴 맛의 강도는 어느 정도가 좋으세요?</div>
+                <br/>
+                <div><span>1. 술은 써야 제 맛! 많이 씁슬했으면 좋겠어요</span></div>
+                <div><span>2. 술을 마신다는 느낌만 낼 수 있으면 좋겠어요</span></div>
+                <div><span>3. 쓰지 않았으면 좋겠어요</span></div>
             </div>
             <div class="jdtiOption" id="jdtiPage7">
                 <button type="button" onclick="resultAnalysis()">결과보기</button>
@@ -157,46 +160,52 @@
                 <div class="jdtiLoadingCircle3"></div>
             </div>
         </span>
+        <div id="jdtiNullSpace2"></div>
         <span id="jdtiSection2">
             <div id="jdtiResult">
                 <img src="./image/주당로고배경x.png" class="jdtiLogo"/>
                 <div> 추천이 완료되었어요 </div>
                 <div> 당신의 JDTI는 </div>
+                <br/><br/>
+                <div id="jdtiResultBox">
+                    <div id="jdtiResultImg">
+                        <img src="./image/jdti_result_img1.jpg"/>
+                    </div>
+                    <div id="jdtiResultName"> ISFJ </div>
+                    <hr/>
+                    <div id="jdtiFeature"> 이슬톡톡 소다톡 필라이트 진로 <br/>
+                        상큼지수 100% 충전! <br/> 새콤상콤한 술에 심장이 뛰는 <br/>
+                        당신은 이 구역의 상큼이~<br/>
+                    </div>
+                </div>
                 <br/><br/><br/>
-                <div id="jdtiResultImg">
-                    <img src="./image/jdti_result_img1.jpg"/>
-                </div>
-                <div id="jdtiResultName"> ISFJ </div>
-                <div id="jdtiFeature"> 이슬톡톡 소다톡 필라이트 진로 <br/>
-                    상큼지수 100% 충전! 새콤상콤한 술에 심장이 뛰는 <br/>
-                    당신은 이 구역의 상큼이~<br/>
-                </div>
-                <br/>
                 <h2> 당신의 술 취향 </h2>
                 <div> 평소 묵직하고 톡톡 터지는 술을 마셔요<br/>
                     한 모금 마셨을 때 새콤한 맛을 좋아해요.<br/>
-                    술은 달달하고 부드러운 맛으로 먹는다고 생각해요.<br/>
+                    술은 달달하고 부드러운 맛으로 <br/> 먹는다고 생각해요.<br/>
                 </div>
+                <br/>
                 <div id="jdtiRecommand">
                     <br/>
-                    <h3>그런 당신을 위한 추천 술</h2>
+                    <h3>그런 당신을 위한 <br/> 추천 술</h3>
+                    <br/>
                     <table>
                         <tr>
-                            <td><img src="./alcoholjpg/처음처럼.png"/></td>
-                            <td><img src="./alcoholjpg/시원.png"/></td>
-                            <td><img src="./alcoholjpg/린.png"/></td>
+                            <td><img src="./alcoholjpg/계룡백일주.png"/></td>
+                            <td><img src="./alcoholjpg/한라산.png"/></td>
                             <td><img src="./alcoholjpg/덕산막걸리.png"/></td>
+                            <td><img src="./alcoholjpg/홍주.png"/></td>
                         </tr>
                         <tr>
-                            <td><a href="">처음처럼</a></td>
-                            <td><a href="">시원</a></td>
-                            <td><a href="">린</a></td>
-                            <td><a href="">덕산막걸리</a></td>
+                            <td><a href="" style="color:darkred;">계룡<br/>백일주</a></td>
+                            <td><a href="" style="color:darkred">한라산</a></td>
+                            <td><a href="" style="color:darkred">덕산<br/>막걸리</a></td>
+                            <td><a href="" style="color:darkred">홍주</a></td>
                         </tr>
                     </table>
                 </div>
                 <br/><br/>
-                <button type="button">테스트 다시하기</button>
+                <button type="button" onClick="window.location.reload()">테스트 다시하기</button>
             </div>
         </span>
     </main>
@@ -245,11 +254,11 @@
                     <h4 class="footer-sec3-helper">help</h4>
                     <table>
                         <tr>
-                            <td><a href="">1:1문의</a></td>
+                            <td><a href="./ask.html">1:1문의</a></td>
                             <td><a href="">주문/배송조회</a></td>
                         </tr>
                         <tr>
-                            <td><a href="">FAQ</a></td>
+                            <td><a href="./faqPage.html">FAQ</a></td>
                             <td><a href="">환불/입금</a></td>
                         </tr>
                         <tr>
