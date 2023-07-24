@@ -8,10 +8,10 @@ main > *{
     font-family: 'GangwonEdu_OTFBoldA';
 }
 #jdtiNullSpace1{
-    height:345px;
+    height:375px;
 }
 #jdtiNullSpace2{
-    height:345px;
+    height:375px;
 }
 .openDoorImg{
     position:absolute;
@@ -19,7 +19,7 @@ main > *{
     bottom:0px;
 }
 .leftDoor{
-    transform: translateX(-227px);
+    transform: translateX(-472px);
     animation: openLeftDoorAni 1s linear;
     animation-fill-mode: forwards;
 }
@@ -28,10 +28,11 @@ main > *{
 
     }
     to{
-        transform: translateX(-715px);
+        transform: translateX(-940px);
     }
 }
 .rightDoor{
+    transform: translateX(0px);
     animation: openRightDoorAni 1s linear;
     animation-fill-mode: forwards;
 }
@@ -40,7 +41,7 @@ main > *{
 
     }
     to{
-        transform: translateX(240px);
+        transform: translateX(340px);
     }
 }
 .jdtiMain{
@@ -49,16 +50,21 @@ main > *{
     padding-bottom: 80px;
     position:relative;
     overflow: hidden;
+    background-color:#edb880;
+    background-image:url("../image/산신령.png");
+    background-repeat: no-repeat;
+    background-size: auto 1200px;
+    background-position: center;
 }
 #jdtiSection1{
     border:1px black solid;
     text-align: center;
-    font-size:16px;
+    font-size:21px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width:440px;
-    height:500px;
+    width:600px;
+    height:800px;
     padding:30px;
     border-radius: 70px;
     background-color:burlywood;
@@ -71,8 +77,8 @@ main > *{
     display:none;
     flex-direction: column;
     justify-content: space-evenly;
-    width:440px;
-    height:1190px;
+    width:600px;
+    height:1550px;
     padding:30px;
     border-radius: 70px;
     background-color:burlywood;
@@ -83,9 +89,10 @@ main > *{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    font-size:32px;
 }
 .jdtiLogo{
-    width:100px;
+    width:200px;
     aspect-ratio: 8 / 5;
 }
 #jdtiPage0 ~ div{
@@ -96,37 +103,35 @@ main > *{
     cursor: pointer;
 }
 .jdtiOption > div > span{
-    border-radius: 4px;
+    border-radius:20px;
     background-color:burlywood;
     border:2px solid brown;
-    padding:10px 2px 6px 2px;
+    padding:8px 2px 6px 0px;
+    display: inline-block;
+    width:500px;
 }
 #jdtiResultLoading {
     display: flex;
+    justify-content: space-evenly;
 }
 #jdtiResultLoading > div{
     width:20px;
     height:20px;
     border-radius:50%;
-    position: absolute;
-    padding-top:30px;
 }
 .jdtiLoadingCircle1{
     background-color: red;
     animation:jdtiLoadingCircleAni 3s linear 2;
-    left:46.5%;
 }
 .jdtiLoadingCircle2{
     background-color: blue;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:0.5s;
-    left:49.5%;
 }
 .jdtiLoadingCircle3{
     background-color: lime;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:1s;
-    left:52.5%;
 }
 #jdtiResultName{
     font-size:24px;
@@ -137,6 +142,15 @@ main > *{
     border-radius: 40px;
     display: inline-block;
     padding:20px;
+}
+#jdtiResult > h2{
+    margin-top:20px;
+}
+.jdtiResultMent{
+    font-size:26px ;
+}
+.jdtiH2Ment{
+    font-size:40px;
 }
 #jdtiResultImg{
     width:200px;
@@ -153,6 +167,12 @@ main > *{
 }
 td > img{
     width:100%;
+    border-radius: 50%;
+}
+.jdtiButton{
+    border-radius: 20px;
+    padding:10px 40px 6px 40px;
+    background-color:#edb880;
 }
 @keyframes jdtiLoadingCircleAni{
     0%{
@@ -175,15 +195,37 @@ td > img{
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
+    .jdtiLogo{
+        width:150px;
+    }
+    .jdtiTestHeader{
+        font-size:20px;
+    }
+    .jdtiMain{
+        background-size: auto 1000px;
+    }
+    .jdtiOption > div > span{
+        width:220px;
+    }
     #jdtiSection1{
         font-size:11px;
-        width:300px;
+        width:320px;
+        height:650px;
+    }
+    .jdtiOption > h2{
+        font-size:18px;
     }
     #jdtiSection2{
         font-size:12px;
-        width:300px;
-        height:1030px;
+        width:320px;
+        height:1170px;
+    }
+    #jdtiNullSpace1{
+        height:260px;
+    }
+    #jdtiNullSpace2{
+        height:260px;
     }
     .jdtiLoadingCircle1{
         left:39%;
@@ -194,23 +236,24 @@ td > img{
     .jdtiLoadingCircle3{
         left:59%;
     }
-    #jdtiNullSpace1{
-        height:265px;
-    }
-    #jdtiNullSpace2{
-        height:265px;
-    }
     .leftDoor{
-        transform: translateX(-227px);
-        animation: openLeftDoorAni 1s linear;
-        animation-fill-mode: forwards;
+        transform: translateX(-425px);
+    }
+    .rightDoor{
+        transform: translateX(-10px);
+    }
+    .jdtiResultMent{
+        font-size:16px ;
+    }
+    .jdtiH2Ment{
+        font-size:27px;
     }
     @keyframes openLeftDoorAni{
         from{
     
         }
         to{
-            transform: translateX(-595px);
+            transform: translateX(-660px);
         }
     }
     .rightDoor{
@@ -222,7 +265,7 @@ td > img{
     
         }
         to{
-            transform: translateX(180px);
+            transform: translateX(200px);
         }
     }
 }

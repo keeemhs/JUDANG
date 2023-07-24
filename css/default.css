@@ -109,8 +109,9 @@ header>nav>.ham>* {
 }
 
 main {
-    margin-top: 99px;
+    margin-top: 95px;
 }
+
 
 @media screen and (max-width: 900px) {
 
@@ -137,6 +138,12 @@ main {
         height: 83px;
     }
 }
+@media screen and (max-width: 600px){
+    main{
+        margin-top: 67px;
+    }
+}
+
 
 /* ==========================header 끝 =============================== */
 

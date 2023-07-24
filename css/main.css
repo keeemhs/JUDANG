@@ -119,8 +119,9 @@ header > nav > .ham > * {
 }
 
 main {
-    margin-top: 99px;
+    margin-top: 95px;
 }
+
 
 /* ====================== section1 css ========================== */
 .section1 {
@@ -139,6 +140,9 @@ video {
         width: 1000px;
         height: 300px;
         padding: 0;
+    }
+    main{
+        margin-top: 67px;
     }
 }
 /* ====================== section1 css end ========================== */
@@ -331,6 +335,40 @@ video {
     height:100%;
     float:left;
 }
+@media screen and (max-width:1400px){
+    .sec3{
+        display:block;
+        height:auto;
+        margin-top: 40px;
+    }
+    .sec3 > div{
+        display: block;
+        width:100%;
+    }
+    .sec3Img1{
+        width:auto;
+        height:200px;
+        float:none;
+    }
+    .sec3Img2{
+        width:auto;
+        height:200px;
+        float:none;
+    }
+}
+@media screen and (max-width:600px){
+    .sec3 > div{
+        height:auto;
+    }
+    .sec3Img1{
+        width:100%;
+        height:auto;
+    }
+    .sec3Img2{
+        width:100%;
+        height:auto;
+    }
+}
 /* =====================section3 css end===================== */
 
 /* ------------------------section-4---------------------------------------- */
@@ -425,6 +463,64 @@ li>.sec4-goods-review{
     position:absolute;
     right:0px;
 }
+@media screen and (max-width:1400px){
+    .sec4-container{
+        width: 100%;
+        height: 600px;
+        align-items:center;
+        flex-direction: column;
+    }
+    .sec4-container > div{
+        padding:40px 20px;
+        width:100%;
+    }
+    .sec4-container > div > ul{
+        width:100%;
+    }
+    .sec4-container > div > ul > li{
+        width:100%;
+        position:relative;
+        height:160px;
+    }
+    .sec4-container > div > h3 > a{
+        right:0px;
+    }
+    .sec4-goods-name{
+        width:100%;
+    }
+    .sec4-goods-review{
+        width:100%;
+    }
+    li>.sec4-goods-name{
+        width:100%;
+    }
+    li>.sec4-goods-review{
+        width:100%;
+    }
+    .sec4-with-img{
+        width:100%;
+    }
+    .sec4-with-img>.sec4-goods-name{
+        width:80%;
+    }
+    .sec4-with-img>.sec4-goods-review{
+        width:80%;
+    }
+    .sec4-img{
+        position:absolute;
+        right:0px;
+    }
+    .sec4-container > div > a{
+        font-size:14px;
+        width:100%;
+    }
+    .sec4-container-1{
+        margin: 40px 0px;
+    }
+    .sec4-container-2{
+        margin: 80px 0px;
+    }
+}
 /* =====================section4 css end===================== */
 
 /* ------------------------footer---------------------------------------- */
@@ -486,81 +582,6 @@ td > a{
     color:gray;
 }
 @media screen and (max-width:1400px){
-    .sec3{
-        display:block;
-        height:auto;
-        margin-top: 40px;
-    }
-    .sec3 > div{
-        display: block;
-        width:100%;
-    }
-    .sec3Img1{
-        width:100%;
-        height:auto;
-        float:none;
-    }
-    .sec3Img2{
-        width:100%;
-        height:auto;
-        float:none;
-    }
-    .sec4-container{
-        width: 100%;
-        height: 600px;
-        align-items:center;
-        flex-direction: column;
-    }
-    .sec4-container > div{
-        padding:40px 20px;
-        width:100%;
-    }
-    .sec4-container > div > ul{
-        width:100%;
-    }
-    .sec4-container > div > ul > li{
-        width:100%;
-        position:relative;
-        height:160px;
-    }
-    .sec4-container > div > h3 > a{
-        right:0px;
-    }
-    .sec4-goods-name{
-        width:100%;
-    }
-    .sec4-goods-review{
-        width:100%;
-    }
-    li>.sec4-goods-name{
-        width:100%;
-    }
-    li>.sec4-goods-review{
-        width:100%;
-    }
-    .sec4-with-img{
-        width:100%;
-    }
-    .sec4-with-img>.sec4-goods-name{
-        width:80%;
-    }
-    .sec4-with-img>.sec4-goods-review{
-        width:80%;
-    }
-    .sec4-img{
-        position:absolute;
-        right:0px;
-    }
-    .sec4-container > div > a{
-        font-size:14px;
-        width:100%;
-    }
-    .sec4-container-1{
-        margin: 40px 0px;
-    }
-    .sec4-container-2{
-        margin: 80px 0px;
-    }
     footer{
         height:400px;
         align-items: normal;
