@@ -119,8 +119,9 @@ header > nav > .ham > * {
 }
 
 main {
-    margin-top: 99px;
+    margin-top: 95px;
 }
+
 
 /* ====================== section1 css ========================== */
 .section1 {
@@ -139,6 +140,9 @@ video {
         width: 1000px;
         height: 300px;
         padding: 0;
+    }
+    main{
+        margin-top: 67px;
     }
 }
 /* ====================== section1 css end ========================== */

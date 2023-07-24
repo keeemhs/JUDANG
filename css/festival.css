@@ -53,51 +53,6 @@ main{
     padding-bottom: 20px;
 }
 
-/* 이전 버전 */
-
-/* .swiper {
-    width: 50%;
-    height: 300px;
-
-    margin-bottom: 40px;
-}
-.swiper-slide img{
-    width: 100%;
-    height: 100%;
-}
-.swiper .swiper-pagination-bullet {
-    background-color: #000;
-    margin: 0 10px;
-  } */
-  /* .pagination{
-    position: relative;
-  }
-  .swiper-pagination {
-    position: absolute;
-    bottom: 305px !important;
-  } */
-  
-  /* .swiper-pagination-bullets.swiper-pagination-horizontal {
-
-    width: 64px !important;
-    left: 86% !important;
-    top: 4% !important;
-    
-  }
-  .swiper-scrollbar{
-    background-color: black !important;
-  }
-.swiper-scrollbar-drag{
-    background-color: white !important;
-} */
-/* 여기까지 */
-
-/* 고친 버전  */
-/* html,
-    body {
-      position: relative;
-      height: 100%;
-    } */
 
     body {
       background: #eee;
@@ -152,6 +107,9 @@ main{
       .swiper-wrapper{
         width:36% !important;
       }
+      /* .swiper-pagination{
+        top: 0px !important;
+      } */
 
 
   /* 여기까지 */
@@ -190,9 +148,7 @@ main{
 .now_festival_info_explain{
     font-size: 20px;
 }
-.active{
-    display: none;
-}
+
 
 .do:hover{
     cursor: pointer;
@@ -249,6 +205,9 @@ main{
         .title{
             font-size: 17px;
             padding-bottom: 0px;
+        }
+        .ad{
+            padding-top: 20px;
         }
         .do{
             margin: 0px 10px;
