@@ -102,7 +102,7 @@ main > *{
     cursor: pointer;
 }
 .jdtiOption > div > span{
-    border-radius: 4px;
+    border-radius:20px;
     background-color:burlywood;
     border:2px solid brown;
     padding:8px 2px 6px 0px;
@@ -111,30 +111,26 @@ main > *{
 }
 #jdtiResultLoading {
     display: flex;
+    justify-content: space-evenly;
 }
 #jdtiResultLoading > div{
     width:20px;
     height:20px;
     border-radius:50%;
-    position: absolute;
-    padding-top:30px;
 }
 .jdtiLoadingCircle1{
     background-color: red;
     animation:jdtiLoadingCircleAni 3s linear 2;
-    left:46.5%;
 }
 .jdtiLoadingCircle2{
     background-color: blue;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:0.5s;
-    left:49.5%;
 }
 .jdtiLoadingCircle3{
     background-color: lime;
     animation:jdtiLoadingCircleAni 3s linear 2;
     animation-delay:1s;
-    left:52.5%;
 }
 #jdtiResultName{
     font-size:24px;

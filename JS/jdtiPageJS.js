@@ -9,7 +9,7 @@ function jdtiNextPage(pageNumber,userChoice){
 function resultAnalysis(){
     document.getElementById("jdtiPage7").style.display="none";
     document.getElementById("jdtiProgress").style.display="none";
-    document.getElementById("jdtiResultLoading").style.display="block";
+    document.getElementById("jdtiResultLoading").style.display="flex";
     setTimeout(()=>{
         document.getElementById("jdtiSection1").style.display="none";
         document.getElementById("jdtiNullSpace1").style.display="none";
