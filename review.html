@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./JS/review.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="imgDiv">
+                <a href="index.html">
+                    <img src="./image/주당로고배경x.png" width="120px" />
+                </a>
+            </div>
+            <div class="navBar">
+                <ul>
+                    <li><a href="./regionView.html">지역별로 보기</a></li>|
+                    <li><a href="./jdti.html">주류 MBTI</a></li>|
+                    <li><a href="./festival.html">주류 페스티벌</a></li>
+                </ul>
+            </div>
+            <div class="searchLogin">
+                <div class="searchInput">
+                    <input type="search" placeholder="제품검색 ex) 안동소주" />
+                </div>
+                <div class="login">
+                    <a href="./loginPage.html">
+                        <img src="./image/person-circle.svg" width="30px" />
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="ham">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="./image/주당로고배경x.png" width="120px" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <img src="./image/주당로고배경x.png" width="120px" />
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./regionView.html">지역별로 보기</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./jdti.html">주류 MBTI</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./festival.html">주류 페스티벌</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="제품검색 ex) 안동소주"
+                                        aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit"
+                                        style="width: 70px;">검색</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviewWapper">
+            <div class="review">
+                <h2 class="review_title">상품후기</h2>
+                <div class="review_box">
+                    <div class="reivew_nav">
+                        <select name="sort" class="sort" onchange="ChangeValue()">
+                            <option value="lastest">최신순</option>
+                            <option value="longest">오래된 순</option>
+                            <option value="higtest">평점 높은 순</option>
+                            <option value="lowest">평점 낮은 순</option>
+                        </select>
+                    </div>
+                    <div class="review_box_inner">
+                        <div class="review_content_wrapper">
+                            <div class="review_content">
+                                <div class="name_box">
+                                    <div class="name"><strong>작성자:</strong> 조진형</div>
+                                    <div class="date">2023.07.25</div>
+                                </div>
+                                <div class="review_goods_info">
+                                    <div class="review_goods_img">
+                                        <div class="review_goods_content">
+                                            <span><strong>후기:</strong> 술맛이 깔끔하고 목넘김이 좋아서 또 먹고싶어요. 생각보다 맛있어서 기분이
+                                                좋았습니다.</span>
+                                            <div class="reveiw_good_rating_wrapper">
+                                                <div class="review_good_rating">
+                                                    <strong>별점:</strong>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img_box">
+                                            <img src="alcoholjpg/강릉소주.png" alt="">
+                                            <div class="reivew_goods_name">
+                                                강릉 소주
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_content_wrapper">
+                            <div class="review_content">
+                                <div class="name_box">
+                                    <div class="name"><strong>작성자:</strong> 심재운</div>
+                                    <div class="date">2023.06.25</div>
+                                </div>
+                            </div>
+                            <div class="review_goods_info">
+                                <div class="review_goods_img">
+                                    <div class="review_goods_content">
+                                        <span><strong>후기:</strong> 너무 쓰고 숙취가 심합니다. ㅠㅠ 맛없어요. 웩</span>
+                                        <div class="reveiw_good_rating_wrapper">
+                                            <div class="review_good_rating">
+                                                <strong>별점:</strong>
+                                                <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_box">
+                                        <img src="alcoholjpg/가야곡양주.png" alt="">
+                                        <div class="reivew_goods_name">
+                                            가야곡양주
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_content_wrapper">
+                            <div class="review_content">
+                                <div class="name_box">
+                                    <div class="name"><strong>작성자:</strong> 김현승</div>
+                                    <div class="date">2023.04.05</div>
+                                </div>
+                            </div>
+                            <div class="review_goods_info">
+                                <div class="review_goods_img">
+                                    <div class="review_goods_content">
+                                        <span><strong>후기:</strong> 한 잔을 마시니 이미 한 병을 다 마신듯한 느낌입니다. 막걸리에 흔치 않은 도수라 그런지
+                                            맛도
+                                            묵직하고 도수도 바로 느껴집니다.</span>
+                                        <div class="reveiw_good_rating_wrapper">
+                                            <div class="review_good_rating">
+                                                <strong>별점:</strong>
+                                                <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_box">
+                                        <img src="alcoholjpg/덕산막걸리.png" alt="">
+                                        <div class="reivew_goods_name">
+                                            덕산막걸리
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review_content_wrapper">
+                            <div class="review_content">
+                                <div class="review_content">
+                                    <div class="name_box">
+                                        <div class="name"><strong>작성자:</strong> 김성제</div>
+                                        <div class="date">2023.01.11</div>
+                                    </div>
+                                </div>
+                                <div class="review_goods_info">
+                                    <div class="review_goods_img">
+                                        <div class="review_goods_content">
+                                            <span><strong>후기:</strong> 술맛이 깔끔하고 목넘김이 좋아서 또 먹고싶어요. 생각보다 맛있어서 기분이
+                                                좋았습니다.</span>
+                                            <div class="reveiw_good_rating_wrapper">
+                                                <div class="review_good_rating">
+                                                    <strong>별점:</strong>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                    <i class="fa-solid fa-star" style="color: #f6ff75;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="img_box">
+                                            <img src="alcoholjpg/고소리술.png" alt="">
+                                            <div class="reivew_goods_name">
+                                                고소리술
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sec1">
+                <img src="./image/주당로고배경.png" class="footer-logo"></img>
+                <br /><br />
+                <span> 주당법인 우리코딩(주) 서울지점</span>
+                <br />
+                <span> 서울시 마포구 숭문4길 6</span>
+                <br />
+                <span> 대표 : 홍길동 | 사업자등록번호 : 000-00-00000 | 사업자번호조회 </span>
+                <br />
+                <span> 통신판매업신고번호:제2021-와부조안-0163호-01816호 </span>
+                <br />
+                <span> 대표번호 : 000-0000-0000 | 팩스번호 : 00-000-0000</span>
+                <br />
+                <span> 메일 : judang@naver.com</span>
+            </div>
+            <div class="footer-sec2-1">
+                <br />
+                <dt class="footer2-center">CS CENTER</dt>
+                <dd class="footer2-center-number">070-0000-0000</dd>
+                <span>평일 : 10:00 ~ 17:00</span>
+                <br />
+                <span>점심시간 : 12:00 ~ 13:00</span>
+                <br />
+                <span> 토요일 , 일요일 및 공휴일 제외</span>
+            </div>
+            <div class="footer-sec-container">
+                <div class="footer-sec2-2">
+                    <br />
+                    <dt class="footer2-center">CS CENTER</dt>
+                    <dd class="footer2-center-number">070-0000-0000</dd>
+                    <span>평일 : 10:00 ~ 17:00</span>
+                    <br />
+                    <span>점심시간 : 12:00 ~ 13:00</span>
+                    <br />
+                    <span> 토요일 , 일요일 및 공휴일 제외</span>
+                </div>
+                <div class="footer-sec3">
+                    <br />
+                    <h4 class="footer-sec3-helper">help</h4>
+                    <table>
+                        <tr>
+                            <td><a href="./ask.html">1:1문의</a></td>
+                            <td><a href="">주문/배송조회</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./faqPage.html">FAQ</a></td>
+                            <td><a href="">환불/입금</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">상품문의</a></td>
+                            <td><a href="">취소/반품/교환</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="">고객센터</a></td>
+                            <td><a href="">찜리스트</a></td>
+                        </tr>
+                    </table>
+                    <img src="https://cdn-pro-web-251-115.cdn-nhncommerce.com/gsool18_godomall_com/data/skin/front/awesome_new/img/icon/icon_insta.png"
+                        width="40px">
+                    <img src="https://cdn-pro-web-251-115.cdn-nhncommerce.com/gsool18_godomall_com/data/skin/front/awesome_new/img/icon/icon_blog.png"
+                        width="40px">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
