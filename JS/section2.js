@@ -1,9 +1,8 @@
 // const slides = document.querySelectorAll(".img_content li");
 const prevBtn = document.querySelector(".button_before");
 const nextBtn = document.querySelector(".button_next");
-let slideIndex = 7;
+let slideIndex = 1;
 let slides = document.querySelectorAll(".img_content li");
-
 // // 이전 버튼
 // prevBtn.addEventListener("click", function () {
 //   let img_content = document.querySelector(".img_content");
@@ -21,10 +20,10 @@ let slides = document.querySelectorAll(".img_content li");
 
 // 이전 버전
 function showSlide(index) {
-  if (index < 0) {
-    slideIndex = slides.length - 1;
-  } else if (index >= slides.length) {
-    slideIndex = 0;
+  if (index < 1) {
+    slideIndex = 5;
+  } else if (index >= slides.length-1) {
+    slideIndex = 1;
   }
 
   for (let i = 0; i < slides.length; i++) {
